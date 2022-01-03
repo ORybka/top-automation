@@ -1,0 +1,64 @@
+:root {
+  --background: #f1f1f1;
+  --grey: #2f4a5b;
+  --red: #f6101f;
+  --red_hover: #B80E19;
+  --black: #0c1f2c;
+  --white: #fff;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-size: 4rem; /* 64px */
+  font-weight: 700;
+}
+h2 {
+  font-size: 3.5rem; /* 56px */
+  font-weight: 700;
+}
+h3 {
+  font-size: 3.5rem; /* 56px */
+  font-weight: 600;
+}
+h3.second {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+}
+h5 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+}
+h6 {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+}
+p.one {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+}
+p.second {
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+}
+.full-height {
+  display: flex;
+  height: 100vh;
+}
+.menu-container {
+  height: 100%;
+  width: 80px;
+  background-color: var(--grey);
+}
+.content-container {
+  height: 100%;
+  width: calc(100vw - 80px);
+  background-color: var(--red);
+}
