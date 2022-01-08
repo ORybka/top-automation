@@ -28,3 +28,19 @@
   color: var(--white);
   padding: 2rem 0 3rem;
 }
+.mainSwiper {
+  width: 100%;
+  height: 100vh;
+}
+.main-swiper-pagination {
+  margin-right: 3rem;
+}
+.main-swiper-pagination .swiper-pagination-bullet {
+  margin: 1rem 0 !important;
+  border-radius: 0;
+  background-color: var(--white);
+  opacity: 1;
+}
+.main-swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--red);
+}

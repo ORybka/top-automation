@@ -1,4 +1,91 @@
 .our-production-section {
+  position: relative;
   height: 100%;
   background-color: var(--white);
+}
+.production-title {
+  width: 100%;
+  text-align: center;
+}
+.prod-swiper-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.prodSwiper {
+  width: 90%;
+  height: 22rem;
+  margin: 5rem 0 0 !important;
+}
+.prod-slide {
+  width: 17rem !important;
+  background-position: center;
+  background-size: cover;
+}
+.prod-slide-01 {
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(/assets/images/prod-slide01.png);
+}
+.prod-slide-02 {
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(/assets/images/prod-slide02.png);
+}
+.prod-slide-03 {
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(/assets/images/prod-slide03.png);
+}
+.prod-slide-04 {
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(/assets/images/prod-slide04.png);
+}
+.prod-slide-05 {
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(/assets/images/prod-slide05.png);
+}
+.prod-swiper-nav .swiper-button-next,
+.prod-swiper-nav .swiper-button-prev {
+  top: 100% !important;
+  margin-top: 40px !important;
+  border: 1px solid #0c1f2c28;
+  padding: 0 21px;
+}
+.prod-swiper-nav .swiper-button-next::after,
+.prod-swiper-nav .swiper-button-prev::after {
+  color: var(--grey);
+  font-size: 1rem !important;
+}
+.prod-swiper-nav .swiper-button-next.swiper-button-disabled, 
+.prod-swiper-nav .swiper-button-prev.swiper-button-disabled {
+  opacity: .8 !important;
+}
+.prod-swiper-nav .swiper-button-prev {
+  right: 83px !important;
+  left: auto !important;
+}
+.prod-swiper-nav .swiper-button-next {
+  right: 40px !important;
+  left: auto !important;
+}
+.prodution-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: var(--white);
+}
+.prodution-link span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.prod-slide-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 20%;
+  bottom: 10%;
+  left: 1rem;
+  line-height: 1.5rem;
+}
+.more-catalog-block {
+  position: absolute;
+  right: 0;
+  width: 90%;
+  margin-top: 53px;
 }
