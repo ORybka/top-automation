@@ -47,6 +47,7 @@ section {
 body {
   font-family: 'Montserrat', sans-serif;
 	line-height: 1;
+  background-color: var(--background);
 }
 ol, ul {
 	list-style: none;
@@ -109,7 +110,7 @@ p.second {
 .content-container {
   position: relative;
   height: 100%;
-  width: calc(100vw - 100px);
+  width: calc(100vw - 75px);
 }
 .main-container {
   width: 85%;
