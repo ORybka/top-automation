@@ -111,6 +111,10 @@ p.second {
   height: 100%;
   width: calc(100vw - 100px);
 }
+.main-container {
+  width: 85%;
+  max-width: 1400px;
+}
 
 /**** MENU ****/
 .menu-container {

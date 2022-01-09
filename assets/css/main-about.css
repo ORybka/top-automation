@@ -1,11 +1,12 @@
 .about-company-section {
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--background);
   padding-bottom: 10rem;
 }
 .about-company-title {
   text-transform: uppercase;
-  margin: 8rem 0 3rem 10%;
+  margin: 8rem auto 3rem;
+  width: 85%;
 }
 .about-description-block {
   display: grid;
@@ -14,8 +15,18 @@
   margin: 0 auto;
 }
 .line-block {
+  position: relative;
   grid-row-start: 1;
   grid-row-end: 3;
+}
+.line-block::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  width: 80%;
+  height: 2px;
+  background-color: var(--black);
 }
 .subtitle-about-block,
 .more-info-block {
@@ -54,7 +65,7 @@
 }
 .about-top-title {
   top: 0;
-  left: 0;
+  left: -3%;
 }
 .about-bottom-title {
   bottom: 0;
@@ -62,7 +73,7 @@
 }
 .about-video-block {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .video-block {
@@ -100,4 +111,24 @@
 .stat-num {
   font-size: 3rem;
   font-weight: 700;
+}
+
+/**** RESPONSIVE ****/
+@media (min-width: 1400px) {
+  .about-video-block {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1800px) {
+  .about-company-title,
+  .about-description-block {
+    max-width: 1400px;
+  }
+  .about-video-container {
+    max-width: 1400px;
+  }
+  .about-video-block {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
