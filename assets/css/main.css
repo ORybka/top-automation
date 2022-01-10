@@ -1,6 +1,7 @@
 :root {
   --background: #f1f1f1;
   --grey: #2f4a5b;
+  --light-grey: #3E5768;
   --red: #f6101f;
   --red-hover: #B80E19;
   --black: #0c1f2c;
@@ -130,6 +131,7 @@ p.second {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  height: 100vh;
   background-color: var(--grey);
   z-index: 5;
   border: 1px solid var(--grey);

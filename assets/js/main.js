@@ -20,8 +20,8 @@ const mainSwiper = new Swiper('.mainSwiper', {
 const prodSwiper = new Swiper('.prodSwiper', {
   initialSlide: 0,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.prod-swiper-button-next',
+    prevEl: '.prod-swiper-button-prev',
   },
   breakpoints: {
     100: {
@@ -38,9 +38,33 @@ const prodSwiper = new Swiper('.prodSwiper', {
       slidesPerView: 3,
       spaceBetween: 30
     },
-    1400: {
-      slidesPerView: 8,
-      spaceBetween: 40
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
+});
+
+// OUR_BLOG_SWIPER
+const blogSwiper = new Swiper('.blogSwiper', {
+  direction: 'horizontal',
+  initialSlide: 0,
+  navigation: {
+    nextEl: '.blog-swiper-button-next',
+    prevEl: '.blog-swiper-button-prev',
+  },
+  breakpoints: {
+    776: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30
     }
   }
 });
