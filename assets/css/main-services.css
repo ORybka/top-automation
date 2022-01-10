@@ -66,8 +66,15 @@
   height: 100vh;
   max-height: 700px;
   margin-top: -42rem;
-  background-image: url('/assets/images/services-background.png');
+  background-image: url('./assets/images/services-background.png');
   background-position: center;
   background-size: cover;
   z-index: 0;
+}
+
+/**** RESPONSIVE ****/
+@media (max-width: 1200px) {
+  .services-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
