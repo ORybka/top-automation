@@ -24,19 +24,19 @@
   background-size: cover;
 }
 .prod-slide-01 {
-  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(./assets/images/prod-slide01.png);
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(assets/images/prod-slide01.png);
 }
 .prod-slide-02 {
-  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(./assets/images/prod-slide02.png);
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(assets/images/prod-slide02.png);
 }
 .prod-slide-03 {
-  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(./assets/images/prod-slide03.png);
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(assets/images/prod-slide03.png);
 }
 .prod-slide-04 {
-  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(./assets/images/prod-slide04.png);
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(assets/images/prod-slide04.png);
 }
 .prod-slide-05 {
-  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(./assets/images/prod-slide05.png);
+  background-image: linear-gradient(rgba(47, 74, 91, 0.5), rgba(47, 74, 91, 0.5)), url(assets/images/prod-slide05.png);
 }
 .prod-swiper-nav {
   position: relative;

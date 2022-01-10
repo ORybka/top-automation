@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('./assets/images/contact-background.png');
+  background: url('assets/images/contact-background.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,6 +36,7 @@
 .contact-email {
   font-size: 0.875rem; 
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .main-contact-form-container {
   display: flex;
