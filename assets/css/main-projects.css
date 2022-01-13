@@ -58,3 +58,20 @@
 .projects-more-block {
   text-align: center;
 }
+
+/**** RESPONSIVE ****/
+@media (max-width: 767px) {
+  .projects-container {
+    flex-direction: column;
+  }
+  .projects-title {
+    flex-direction: column;
+  }
+  .project-element {
+    width: 95%;
+  }
+  .project-element:first-child,
+  .project-element {
+    margin: .5rem 0 0;
+  }
+}

@@ -25,12 +25,10 @@ const prodSwiper = new Swiper('.prodSwiper', {
   },
   breakpoints: {
     100: {
-      direction: 'vertical',
       slidesPerView: 2,
       spaceBetween: 20
     },
     776: {
-      direction: 'horizontal',
       slidesPerView: 2,
       spaceBetween: 20
     },
@@ -68,3 +66,12 @@ const blogSwiper = new Swiper('.blogSwiper', {
     }
   }
 });
+
+// MENU
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('main-menu-block');
+
+menuBtn.addEventListener('click', openMenu);
+function openMenu() {
+  menu.classList.toggle('menu-show');
+}

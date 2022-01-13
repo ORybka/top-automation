@@ -53,8 +53,6 @@
   font-size: 0.7rem;
   color: var(--black);
 }
-
-
 .copyright {
   position: absolute;
   bottom: 0;
@@ -63,4 +61,11 @@
   font-weight: 500;
   font-size: 0.8125rem;
   opacity: .5;
+}
+
+/**** RESPONSIVE ****/
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+  }
 }

@@ -112,6 +112,9 @@
   font-size: 3rem;
   font-weight: 700;
 }
+.about-container-mobile {
+  display: none;
+}
 
 /**** RESPONSIVE ****/
 @media (min-width: 1400px) {
@@ -130,5 +133,41 @@
   .about-video-block {
     max-width: 1400px;
     margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .about-description-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .line-block {
+    margin: 0 0 2rem;
+    width: 30%;
+  }
+  .text-about-block,
+  .more-info-block {
+    display: none;
+  }
+  .about-container-mobile,
+  .text-about-block-mobile,
+  .more-info-block-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-about-block-mobile p {
+    margin: .5rem 0;
+  }
+  .more-info-block-mobile {
+    margin: 1.5rem 0 2rem;
+  }
+  .about-video-block {
+    flex-direction: column-reverse;
+  }
+  .about-top-title {
+    top: 50%;
+    left: -3%;
+  }
+  .video-block {
+    margin-top: 5rem;
   }
 }

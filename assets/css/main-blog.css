@@ -100,3 +100,14 @@
   left: 1rem;
   line-height: 1.5rem;
 }
+/**** RESPONSIVE ****/
+@media (max-width: 767px) {
+  .blog-main-bgimage {
+    left: 0;
+    width: 2rem;
+  }
+  .blog-main-bgimage img {
+    height: 100%;
+    width: 100%;
+  }
+}

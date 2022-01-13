@@ -44,3 +44,19 @@
   object-fit: cover;
   width: 100%;
 }
+
+/**** RESPONSIVE ****/
+@media (max-width: 767px) {
+  .clients-block {
+    grid-template-columns: 1fr 1fr;
+  }
+  .clients-title {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .clients-subtitle-text {
+    margin: 2rem 0 0;
+  }
+}
