@@ -22,6 +22,7 @@
   align-items: center;
   justify-content: flex-start;
   padding-left: 4rem;
+  background-color: var(--white);
 }
 .contact-company-block {
   position: absolute;
@@ -126,5 +127,43 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .contact-phone-container {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .contact-phone-container h3 {
+    margin: 3rem 0;
+    font-size: 2rem;
+  }
+  .contact-company-block {
+    position: relative;
+  }
+  .main-contact-form-container {
+    flex-direction: column;
+  }
+  .contact-form-title {
+    justify-content: center;
+    width: 90%;
+    padding: 0;
+    margin: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .contact-form-title h3 {
+    line-height: 2.4rem;
+  } 
+  .contact-form-container {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .main-contact-form-block {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .main-contact-form-input {
+    width: inherit;
   }
 }

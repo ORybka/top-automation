@@ -44,3 +44,11 @@
 .main-swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--red);
 }
+
+/**** RESPONSIVE ****/
+@media (max-width: 767px) {
+  .title-page-block {
+    padding-left: 8%;
+    width: 70%;
+  }
+}

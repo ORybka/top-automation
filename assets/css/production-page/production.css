@@ -1,0 +1,106 @@
+.production-title-container {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  margin-left: 80px;
+  background-image: url('/assets/images/production-page/production-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+.production-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-production-title,
+.main-production-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--white);
+}
+.main-production-subtitle {
+  width: 70%;
+}
+.main-production-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.main-production-item {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  height: 100%;
+  min-height: 435px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #CFD2D365;
+  background: transparent;
+}
+.main-production-item:hover {
+  background: var(--white);
+}
+.main-production-item img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin: 2rem auto;
+  transform: scale(1);
+  transition: transform .7s ease-in-out;
+}
+.main-production-item:hover img {
+  transform: scale(1.1);
+}
+.main-production-list {
+  width: 95%;
+  margin: 1rem;
+}
+.main-production-list li {
+  list-style-image: url('/assets/images/production-page/list-rectangle.svg');
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0.5rem;
+}
+
+/**** RESPONSIVE ****/
+@media (max-width: 1205px) {
+  .main-production-item img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+@media (max-width: 700px) {
+  .production-title-container {
+    height: 50vh;
+    margin-left: 0;
+  }  
+  .production-grid-container {
+    grid-template-columns: 100%;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+  .main-production-container {
+    flex-direction: column;
+  }
+  .main-production-item {
+    width: 100%;
+    max-height: max-content;
+    justify-content: center;
+    padding: 10%;
+  }
+  .main-production-item img {
+    width: 17rem;
+    height: 17rem;
+    margin: 1rem auto;
+  }
+  .main-production-list {
+    margin: 2rem auto;
+  }
+}
