@@ -29,21 +29,21 @@ document.addEventListener('DOMContentLoaded', function () {
         prevEl: '.prod-swiper-button-prev',
       },
       breakpoints: {
-        100: {
-          slidesPerView: 2,
+        0: {
+          slidesPerView: 1.1,
           spaceBetween: 20
         },
         776: {
-          slidesPerView: 2,
+          slidesPerView: 3.5,
           spaceBetween: 20
         },
         992: {
-          slidesPerView: 3,
+          slidesPerView: 3.5,
           spaceBetween: 30
         },
         1200: {
-          slidesPerView: 4,
-          spaceBetween: 30
+          slidesPerView: 3.5,
+          spaceBetween: 100
         }
       }
     });
@@ -60,16 +60,24 @@ document.addEventListener('DOMContentLoaded', function () {
         prevEl: '.blog-swiper-button-prev',
       },
       breakpoints: {
+        0: {
+          slidesPerView: 1.1,
+          spaceBetween: 20
+        },
         776: {
-          slidesPerView: 1,
-          spaceBetween: 10
+          slidesPerView: 3.5,
+          spaceBetween: 20
         },
         992: {
-          slidesPerView: 3,
-          spaceBetween: 30
+          slidesPerView: 3.5,
+          spaceBetween: 20
         },
         1200: {
-          slidesPerView: 4,
+          slidesPerView: 4.5,
+          spaceBetween: 20
+        },
+        1500: {
+          slidesPerView: 4.5,
           spaceBetween: 30
         }
       }
@@ -116,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // MOBILE_MENU
   const mobileMenuBtn = document.getElementById('menu-btn-mobile');
   mobileMenuBtn.addEventListener('click', openMenu);
-
 
   // VIDEO_BLOCK
   const videoBtn = document.getElementById('about-video');

@@ -15,11 +15,10 @@
 }
 .prodSwiper {
   width: 92%;
-  height: 22rem;
+  height: 27vw;
   margin: 5rem 0 0 !important;
 }
 .prod-slide {
-  width: 17rem !important;
   background-position: center;
   background-size: cover;
 }
@@ -93,6 +92,7 @@
   right: 0;
   width: 92%;
   margin-top: 53px;
+  z-index: 1;
 }
 
 /**** RESPONSIVE ****/
@@ -103,5 +103,8 @@
     width: 100%;
     margin-top: 10rem;
     text-align: center;
+  }
+  .prodSwiper {
+    height: 40vh;
   }
 }

@@ -18,18 +18,20 @@
   <title>TOP AUTOMATION | Production</title>
 </head>
 <body>
-  <section id="production-page">
+  <!-- HEADER starts here -->
+  <section class="header-section">
     <div class="menu-container main-menu-container">
       <div class="logo-container">
         <img src="/assets/images/logo.png" alt="logo">
       </div>
       <div id="menu-btn" class="menu-btn-container">
-        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 1H24" stroke="white" stroke-width="2"/>
-          <path d="M0 7H16" stroke="white" stroke-width="2"/>
-          <path d="M0 13H20" stroke="white" stroke-width="2"/>
-        </svg>
-        <p>меню</p>
+        <div id="menu-container" class="menu-btn-inner-container">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p id="menu-text">меню</p>
       </div>
       <div class="scroll-container">
         <button>
@@ -44,7 +46,7 @@
         <div class="logo-container">
           <img src="/assets/images/logo.png" alt="logo">
         </div>
-        <div id="languages-block" class="languages-block">
+        <div class="languages-block">
           <div id="lang-one" class="lang">rus</div>
           <div class="lang-separator">
             <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,28 +57,32 @@
         </div>
       </div>
       <div class="mobile-block-right">
-        <a href="tel:+380672169797" id="phone-btn" class="phone-btn-container" title="+380672169797">
-          <img src="/assets/images/phone.svg" alt="phone">
-        </a>
+        <div class="phone-btn-container">
+          <a href="tel:+380672169797">
+            <img src="/assets/images/phone.svg" alt="phone">
+          </a>
+        </div>
         <div id="menu-btn-mobile" class="menu-btn-container">
-          <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 1H24" stroke="white" stroke-width="2"/>
-            <path d="M0 7H16" stroke="white" stroke-width="2"/>
-            <path d="M0 13H20" stroke="white" stroke-width="2"/>
-          </svg>
+          <div id="menu-container-mobile" class="menu-btn-inner-container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
+    <!-- class 'light-font' for main header for white text color and class 'dark-font' for black text color -->
     <div class="main-header light-font">
       <div class="main-header-inner-block">
         <div class="languages-block">
-          <div class="lang">rus</div>
+          <div id="lang-one" class="lang">rus</div>
           <div class="lang-separator">
             <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="2" cy="2" r="2" fill="#F6101F"/>
             </svg>
           </div>
-          <div class="lang">eng</div>
+          <div id="lang-two" class="lang">eng</div>
         </div>
         <div class="phone-search-block">
           <div class="phone-block">+380 67 216 97 97</div>
@@ -86,8 +92,67 @@
         </div>
       </div>
     </div>
-    <div id="main-menu-block" class="main-menu-block"></div>
+    <div id="main-menu-block" class="main-menu-block">
+      <div class="main-menu-left">
+        <img src="/assets/images/blog-background.png" alt="menu background">
+        <ul class="menu-left-list">
+          <li class="menu-input-search">
+            <label class="menu-input-label"></label>
+            <input type="search">
+          </li>
+          <li class="menu-link"><a href="/#about">ПРО НАС</a></li>
+          <li class="menu-link"><a href="/#projects">ПРОЕКТИ</a></li>
+          <li class="menu-link"><a href="/#services">ПОСЛУГИ</a></li>
+          <li class="menu-link"><a href="/#blog">БЛОГ</a></li>
+          <li class="menu-link"><a href="/#contact">КОНТАКТИ</a></li>
+        </ul>
+        <div class="languages-block-menu">
+          <div id="lang-one" class="lang menu-link">rus</div>
+          <div class="lang-separator">
+            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="2" cy="2" r="2" fill="#F6101F"/>
+            </svg>
+          </div>
+          <div id="lang-two" class="lang menu-link">eng</div>
+        </div>
+      </div>
+      <div class="main-menu-block-inner">
+        <img class="menu-vector" src="/assets/images/menu-vector.svg" alt="menu vector">
+        <div class="main-menu-middle">
+          <ul class="menu-middle-list">
+            <li class="menu-link page-link"><a href="/production/">ПРОДУКЦІЯ</a></li>
+            <li class="menu-link"><a href="/">Системи автоматичного відбору</a></li>
+            <li class="menu-link"><a href="/">Конвейерні системи</a></li>
+            <li class="menu-link"><a href="/">Системи автоматичної упаковки</a></li>
+            <li class="menu-link"><a href="/">Системи вертикального переміщення</a></li>
+            <li class="menu-link"><a href="/">Системи автоматичного зваження</a></li>
+            <li class="menu-link"><a href="/">Пластикові тари</a></li>
+            <li class="menu-link"><a href="/">Стелажне обладнання</a></li>
+          </ul>
+        </div>
+        <div class="main-menu-right">
+          <ul class="menu-right-list">
+            <li>
+              <p class="menu-right-title">АДРЕСА:</p>
+              <p class="menu-right-info one">м. Київ</p>
+              <p class="menu-right-info one">вул. Рейтарська 18</p>
+            </li>
+            <li>
+              <p class="menu-right-title">ТЕЛЕФОН:</p>
+              <p class="menu-right-info one">вул. Рейтарська 18</p>
+            </li>
+            <li>
+              <p class="menu-right-title">ТЕЛЕФОН:</p>
+              <p class="menu-right-info one">ПН-ПТ з 09:00 - 18:00</p>
+              <p class="menu-right-info one">СБ-ВС Вихідні</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
+  <!-- HEADER ends here -->
+
   <section class="main-production-container">
     <div class="content-container production-title-container">
       <div class="production-grid-container">

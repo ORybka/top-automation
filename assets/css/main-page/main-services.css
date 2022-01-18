@@ -3,10 +3,15 @@
   background-color: var(--background);
   margin-bottom: 10rem; 
 }
+.services-title-container {
+  margin: 0 auto;
+}
 .services-title {
   display: flex;
   justify-content: flex-start;
-  margin: 2rem auto 3rem;
+  margin: 2rem 0 3rem;
+  width: 100%;
+  max-width: 400px;
 }
 .services-container {
   margin: 0 auto;
@@ -17,12 +22,14 @@
   grid-template-columns: 335px 335px 335px;
   grid-template-rows: 375px 375px;
   grid-gap: 1rem;
-  margin-top: -9rem;
+  width: fit-content;
+  margin: -9rem auto 0;
 }
 .services-grid-item {
   position: relative;
   height: 100%;
   width: 100%;
+  max-width: 400px;
   background-color: var(--grey);
   color: var(--white);
   padding: 2rem;
@@ -73,6 +80,11 @@
 }
 
 /**** RESPONSIVE ****/
+@media (min-width: 1400px) {
+  .services-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 1200px) {
   .services-grid-container {
     grid-template-columns: repeat(3, 1fr);
