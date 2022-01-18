@@ -34,12 +34,13 @@
         <img src="/assets/images/logo.png" alt="logo">
       </div>
       <div id="menu-btn" class="menu-btn-container">
-        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 1H24" stroke="white" stroke-width="2"/>
-          <path d="M0 7H16" stroke="white" stroke-width="2"/>
-          <path d="M0 13H20" stroke="white" stroke-width="2"/>
-        </svg>
-        <p>меню</p>
+        <div id="menu-container" class="menu-btn-inner-container">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p id="menu-text">меню</p>
       </div>
       <div class="scroll-container">
         <button>
@@ -50,25 +51,34 @@
       </div>
     </div>
     <div class="menu-container main-menu-container-mobile">
-      <div class="logo-container">
-        <img src="/assets/images/logo.png" alt="logo">
-      </div>
-      <div id="languages-block" class="languages-block">
-        <div id="lang-one" class="lang">rus</div>
-        <div class="lang-separator">
-          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="2" cy="2" r="2" fill="#F6101F"/>
-          </svg>
+      <div class="mobile-block-left">
+        <div class="logo-container">
+          <img src="/assets/images/logo.png" alt="logo">
         </div>
-        <div id="lang-two" class="lang">eng</div>
+        <div id="languages-block" class="languages-block">
+          <div id="lang-one" class="lang">rus</div>
+          <div class="lang-separator">
+            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="2" cy="2" r="2" fill="#F6101F"/>
+            </svg>
+          </div>
+          <div id="lang-two" class="lang">eng</div>
+        </div>
       </div>
-      <div id="menu-btn" class="menu-btn-container">
-        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 1H24" stroke="white" stroke-width="2"/>
-          <path d="M0 7H16" stroke="white" stroke-width="2"/>
-          <path d="M0 13H20" stroke="white" stroke-width="2"/>
-        </svg>
-        <p>меню</p>
+      <div class="mobile-block-right">
+        <div class="phone-btn-container">
+          <a href="tel:+380672169797">
+            <img src="/assets/images/phone.svg" alt="phone">
+          </a>
+        </div>
+        <div id="menu-btn-mobile" class="menu-btn-container">
+          <div id="menu-container-mobile" class="menu-btn-inner-container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- class 'light-font' for main header for white text color and class 'dark-font' for black text color -->
@@ -173,7 +183,7 @@
   <section id="about" class="about-company-section">
     <div id="about-company-popup" class="about-company-popup">
       <div id="video-btn-close" class="video-btn-close">
-        <img src="/assets/images/close-btn.svg" alt="close button">
+        <img src="/assets/images/close-btn.svg" alt="close button"> 
       </div>
       <img src="/assets/images/video-preview.png" alt="video preview">
     </div>

@@ -78,21 +78,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // MENU
   const menuBtn = document.getElementById('menu-btn');
+  const menuIcon = document.getElementById('menu-container');
+  const menuIconMobile = document.getElementById('menu-container-mobile');
+  const menuText = document.getElementById('menu-text');
   const menu = document.getElementById('main-menu-block');
 
   menuBtn.addEventListener('click', openMenu);
   function openMenu() {
-    menu.classList.toggle('menu-show');
+    let icon;
+    window.innerWidth > 766 ? icon = menuIcon : icon = menuIconMobile;
+    icon.classList.toggle('open');
+
+    if (icon.classList.contains('open')) {
+      menuText.innerText = 'close';
+    } else {
+      menuText.innerText = 'меню';
+    }
+
+    if (menu.classList.contains('menu-show')) {
+      menu.classList.toggle('menu-hide');
+    } else {
+      menu.classList.toggle('menu-show');
+    }
   }
 
   // MOBILE_MENU
-  // const mobileMenuBtn = document.getElementById('menu-btn-mobile');
-  // const mobileMenu = document.getElementById('main-menu-block-mobile');
+  const mobileMenuBtn = document.getElementById('menu-btn-mobile');
+  mobileMenuBtn.addEventListener('click', openMenu);
 
-  // mobileMenuBtn.addEventListener('click', openMenu);
-  // function openMenu() {
-  //   mobileMenu.classList.toggle('menu-show');
-  // }
 
   // VIDEO_BLOCK
   const videoBtn = document.getElementById('about-video');

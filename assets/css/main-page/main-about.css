@@ -219,14 +219,21 @@
     flex-direction: column-reverse;
   }
   .about-top-title {
-    top: 50%;
-    left: -3%;
+    top: 215px;
+    left: 0;
   }
   .video-block {
     margin-top: 5rem;
   }
   .about-video-preview {
-    height: 24rem;
-    width: 24rem;
+    height: 85vw;
+    width: 85vw;
+  }
+  .about-top-title,
+  .about-bottom-title {
+    font-size: 3.5rem;
+  }
+  .about-bottom-title {
+    left: 8vw;
   }
 }
