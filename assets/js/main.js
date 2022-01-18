@@ -96,11 +96,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (menu.classList.contains('menu-show')) {
-      menu.classList.toggle('menu-hide');
+      menu.classList.remove('menu-show');
+      menu.classList.add('menu-hide');
     } else {
-      menu.classList.toggle('menu-show');
+      menu.classList.remove('menu-hide');
+      menu.classList.add('menu-show');
     }
   }
+
+  document.addEventListener("click", function (e) {
+    if (e.target.closest('.main-menu-block') !== null && e.target.closest('.menu-link')) {
+      menu.classList.remove('menu-show');
+      menu.classList.add('menu-hide');
+      menuText.innerText = 'меню';
+      window.innerWidth > 766 ? menuIcon.classList.remove('open') : menuIconMobile.classList.remove('open');
+    }
+  }, false);
 
   // MOBILE_MENU
   const mobileMenuBtn = document.getElementById('menu-btn-mobile');

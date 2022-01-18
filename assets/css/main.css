@@ -271,15 +271,117 @@ p.second {
   position: relative;
 }
 .main-menu-block {
-  display: block;
+  display: flex;
   position: fixed;
   height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
   top: 0;
   left: 0;
   background-color: var(--black);
+  padding-left: 80px;
   z-index: 11;
 }
-
+.main-menu-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+}
+.main-menu-left img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+.menu-left-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+  max-height: 20rem;
+  z-index: 5;
+}
+.menu-left-list li a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.main-menu-block-inner {
+  position: relative;
+  display: flex;
+  width: 69%;
+}
+.main-menu-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54%;
+  background-color: var(--grey);
+}
+.menu-right-list,
+.menu-middle-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+  max-height: 20rem;
+  z-index: 5;
+}
+.menu-middle-list li a {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--white);
+}
+.menu-right-list p.menu-right-title,
+.menu-middle-list li.page-link a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.main-menu-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46%;
+  background-color: transparent;
+}
+.menu-right-title {
+  margin-bottom: 0.9rem;
+}
+.menu-right-info {
+  line-height: 1.5rem;
+  color: var(--white);
+}
+.menu-vector {
+  position: absolute;
+  top: 20vh;
+  z-index: 0;
+}
+.languages-block-menu {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--white);
+}
+.languages-block-menu .lang-separator {
+  padding: 0;
+}
+.languages-block-menu .lang:first-child {
+  padding-left: 0;
+  margin-left: -2rem;
+}
 .menu-btn-inner-container {
   width: 25px;
   height: 15px;
@@ -364,6 +466,11 @@ p.second {
 }
 
 /**** RESPONSIVE ****/
+@media (min-width: 1400px) {
+  html {
+    font-size: 20px;
+  }
+}
 @media (max-width: 1200px) {
   html {
     font-size: 14px;
@@ -387,6 +494,14 @@ p.second {
 }
 
 /**** RESPONSIVE MENU + HEADER ****/
+@media (min-width: 1400px) {
+  .menu-left-list,
+  .menu-middle-list,
+  .menu-right-list {
+    max-height: 27rem;
+  }
+
+}
 @media (max-width: 767px) {
   .menu-container,
   .menu-container.main-menu-container,
@@ -441,10 +556,11 @@ p.second {
     border: 1px solid var(--white);
     border-radius: 50%;
   }
-  .main-menu-block-mobile {
+  /* .main-menu-block-mobile {
     height: 100vh;
-  }
+  } */
   .main-menu-block {
+    flex-direction: column;
     width: 100%;
     height: 0;
   }
@@ -461,41 +577,41 @@ p.second {
 /* KEYFRAMES */
 @keyframes menuSlide {
   from {
-    width: 0;
+    transform: translateX(-100%);
     transition-timing-function: ease-in;
   }
   to {
-    width: 100%;
+    transform: translateX(0);
     transition-timing-function: ease-out;
   }
 }
 @keyframes menuSlideOut {
   from {
-    width: 100%;
+    transform: translateX(0);
     transition-timing-function: ease-in;
   }
   to {
-    width: 0;
+    transform: translateX(-100%);
     transition-timing-function: ease-out;
   }
 }
 @keyframes menuSlideMobile {
   from {
-    height: 0;
+    transform: translateY(-100%);
     transition-timing-function: ease-in;
   }
   to {
-    height: 100%;
+    transform: translateY(0);
     transition-timing-function: ease-out;
   }
 }
 @keyframes menuSlideOutMobile {
   from {
-    height: 100%;
+    transform: translateY(0);
     transition-timing-function: ease-in;
   }
   to {
-    height: 0;
+    transform: translateY(-100%);
     transition-timing-function: ease-out;
   }
 }
