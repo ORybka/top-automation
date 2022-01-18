@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('.prodSwiper')) {
     const prodSwiper = new Swiper('.prodSwiper', {
       initialSlide: 0,
+      loop: true,
       navigation: {
         nextEl: '.prod-swiper-button-next',
         prevEl: '.prod-swiper-button-prev',
@@ -85,11 +86,29 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // MOBILE_MENU
-  const mobileMenuBtn = document.getElementById('menu-btn-mobile');
-  const mobileMenu = document.getElementById('main-menu-block-mobile');
+  // const mobileMenuBtn = document.getElementById('menu-btn-mobile');
+  // const mobileMenu = document.getElementById('main-menu-block-mobile');
 
-  mobileMenuBtn.addEventListener('click', openMenu);
-  function openMenu() {
-    mobileMenu.classList.toggle('menu-show');
+  // mobileMenuBtn.addEventListener('click', openMenu);
+  // function openMenu() {
+  //   mobileMenu.classList.toggle('menu-show');
+  // }
+
+  // VIDEO_BLOCK
+  const videoBtn = document.getElementById('about-video');
+  const videoPopup = document.getElementById('about-company-popup');
+  const body = document.querySelector('body');
+  const videoBtnClose = document.getElementById('video-btn-close');
+
+
+  videoBtn.addEventListener('click', showVideoPopup);
+  videoBtnClose.addEventListener('click', hideVideoPopup);
+  function showVideoPopup() {
+    body.classList.add('no-scroll');
+    videoPopup.classList.add('show');
+  }
+  function hideVideoPopup() {
+    body.classList.remove('no-scroll');
+    videoPopup.classList.remove('show');
   }
 });

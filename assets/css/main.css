@@ -50,6 +50,9 @@ body {
 	line-height: 1;
   background-color: var(--background);
 }
+body.no-scroll {
+  overflow: hidden;
+}
 ol, ul {
 	list-style: none;
 }
