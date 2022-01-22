@@ -256,6 +256,9 @@ p.second {
   font-size: 0.875rem;
   font-weight: 600;
 }
+.red-link:hover span {
+  color: var(--grey);
+}
 .red-link span {
   color: var(--red);
 }

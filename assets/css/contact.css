@@ -104,6 +104,9 @@
   letter-spacing: 0.14rem;
   cursor: pointer;
 }
+.main-contact-form-btn-block input[type=submit]:hover {
+  color: var(--red);
+}
 .main-contact-form-btn-block span {
   display: none;
 }
@@ -117,7 +120,7 @@
     font-size: 1.8rem;
   }
   .main-contact-form-input {
-    width: 40%;
+    width: 85%;
   }
 }
 @media (max-width: 767px) {
