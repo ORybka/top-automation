@@ -86,6 +86,14 @@
   .projects-container {
     display: none;
   }
+  .projects-title {
+    flex-direction: column;
+    margin: 8rem auto 6rem;
+  }
+  .projects-title-line::after {
+    left: 3px;
+    width: 7rem;
+  }
   .projects-swiper-container {
     display: block;
     margin: 4rem 0 4rem 2.5rem;

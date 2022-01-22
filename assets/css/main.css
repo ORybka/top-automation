@@ -229,7 +229,7 @@ p.second {
 .main-btn {
   display: flex;
   align-items: center;
-  height: 2rem;
+  height: 4rem;
   width: fit-content;
   padding: 1rem 2rem;
   background-color: var(--red);
@@ -552,6 +552,9 @@ p.second {
 
 }
 @media (max-width: 767px) {
+  .main-container {
+    width: 85%;
+  }
   .menu-container,
   .menu-container.main-menu-container,
   .main-header {
