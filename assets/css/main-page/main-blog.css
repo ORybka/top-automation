@@ -117,6 +117,7 @@
   position: absolute;
   top: 0;
   height: 60%;
+  width: 100%;
   z-index: -1;
 }
 .hover-image-block img {

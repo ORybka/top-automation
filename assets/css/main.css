@@ -310,6 +310,10 @@ p.second {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--white);
+  transition: color .35s ease;
+}
+.menu-left-list li a:hover {
+  color: var(--red);
 }
 .main-menu-block-inner {
   position: relative;
@@ -323,8 +327,7 @@ p.second {
   width: 54%;
   background-color: var(--grey);
 }
-.menu-right-list,
-.menu-middle-list {
+.main-menu-middle ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -332,11 +335,48 @@ p.second {
   max-height: 20rem;
   z-index: 5;
 }
-.menu-middle-list li a {
+.main-menu-middle ul li a {
+  position: relative;
   text-transform: uppercase;
   font-size: .8rem;
   font-weight: 700;
   color: var(--white);
+  text-decoration: none;
+  transition: all .35s ease;
+}
+.main-menu-middle ul li a::before {
+  content: ""; 
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -.3rem;
+  left: 0;
+  background-color: var(--red);
+  -webkit-transition: all 0.3s ease-in-out 0s; 
+  transition: all 0.3s ease-in-out 0s; 
+}   
+.main-menu-middle ul li:first-child a::before {
+  content: none; 
+}   
+.main-menu-middle ul li:first-child a:hover {
+  color: var(--red);
+} 
+.main-menu-middle ul li a:hover::before {
+  width: 100%;
+}   
+.main-menu-middle ul li:first-child a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.menu-right-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+  max-height: 20rem;
+  z-index: 5;
 }
 .menu-right-list p.menu-right-title,
 .menu-middle-list li.page-link a {

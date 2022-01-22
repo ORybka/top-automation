@@ -19,7 +19,8 @@
 }
 .services-grid-container {
   display: grid;
-  grid-template-columns: 335px 335px 335px;
+  /* grid-template-columns: 335px 335px 335px; */
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 375px 375px;
   grid-gap: 1rem;
   width: fit-content;
