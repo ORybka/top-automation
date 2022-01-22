@@ -117,7 +117,7 @@ p.second {
   width: calc(100vw - 75px);
 }
 .main-container {
-  width: 85%;
+  width: 92%;
   max-width: 1400px;
 }
 
@@ -362,6 +362,7 @@ p.second {
 .menu-vector {
   position: absolute;
   top: 20vh;
+  width: 100%;
   z-index: 0;
 }
 .languages-block-menu {

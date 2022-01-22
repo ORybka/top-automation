@@ -30,9 +30,15 @@
   height: 100%;
   width: 100%;
   max-width: 400px;
+  margin-top: 0;
   background-color: var(--grey);
   color: var(--white);
   padding: 2rem;
+  transition: margin-top .7s;
+}
+.services-item-button svg {
+  transform: rotate(0deg);
+  transition: transform .5s;
 }
 .services-grid-item-hidden {
   visibility: hidden;
@@ -64,6 +70,12 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  width: auto;
+  opacity: 0.3;
+}
+.services-item-vector img {
+  width: 85%;
+  transition: width .5s;
 }
 .services-item-vector-bottomplus {
   bottom: 2rem;
@@ -78,16 +90,48 @@
   background-size: cover;
   z-index: 0;
 }
+.services-grid-item:hover {
+  background-color: var(--red);
+  margin-top: -.5rem;
+}
+.services-grid-item:hover .services-item-vector {
+  opacity: 1;
+}
+.services-grid-item:hover .services-item-vector img {
+  width: 90%;
+}
+.services-grid-item:hover .services-item-button {
+  background-color: var(--white);
+}
+.services-grid-item:hover .services-item-button svg {
+  transform: rotate(90deg);
+}
+.services-grid-item:hover .services-item-button svg path {
+  stroke: var(--black);
+}
 
 /**** RESPONSIVE ****/
 @media (min-width: 1400px) {
   .services-grid-container {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 440px 440px;
+  }
+  .services-bg-image {
+    margin-top: -37rem;
+  }
+  .services-item-vector img {
+    width: 120%;
+  }
+  .services-grid-item:hover .services-item-vector img {
+    width: 125%;
   }
 }
 @media (max-width: 1200px) {
   .services-grid-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .services-bg-image {
+    margin-top: -49rem;
   }
 }
 @media (max-width: 767px) {
@@ -128,5 +172,8 @@
   }
   .services-bg-image {
     display: none;
+  }
+  .services-grid-item:hover {
+    margin-top: 0;
   }
 }

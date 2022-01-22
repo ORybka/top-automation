@@ -38,6 +38,7 @@
   font-size: 0.875rem; 
   font-weight: 700;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .main-contact-form-container {
   display: flex;
@@ -58,7 +59,11 @@
   padding: 0 1rem;
 }
 .main-contact-form-block {
+  display: flex;
   width: 100%;
+}
+.wpcf7-not-valid-tip {
+  padding-left: 1rem;
 }
 .main-contact-form-input {
   width: 43%;
@@ -86,10 +91,10 @@
   align-items: center;
   justify-content: flex-end;
   width: 94%;
-  padding: 2rem 1rem 0;
+  padding: 2rem 0 1rem 0;
 
 }
-.main-contact-form-btn {
+.main-contact-form-btn-block input[type=submit] {
   background: transparent;
   border: none;
   color: var(--white);
@@ -97,6 +102,10 @@
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.14rem;
+  cursor: pointer;
+}
+.main-contact-form-btn-block span {
+  display: none;
 }
 .contact-name-container-mobile {
   display: none;
@@ -123,10 +132,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/assets/images/contact-background.png);
+    background: url(/assets/images/contact-background-mobile.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .contact-name-container-mobile img {
+    margin: 2rem 0;
   }
   .contact-phone-container {
     flex-direction: column;
@@ -134,11 +146,19 @@
     padding-left: 0;
   }
   .contact-phone-container h3 {
-    margin: 3rem 0;
-    font-size: 2rem;
+    margin: 3rem 0 3.5rem;
+    font-size: 2.5rem;
   }
   .contact-company-block {
     position: relative;
+    right: 0;
+    margin-bottom: 3rem;
+  }
+  .contact-email {
+    font-size: 1rem; 
+  }
+  .contact-phone-num {
+    text-align: center;
   }
   .main-contact-form-container {
     flex-direction: column;
@@ -164,6 +184,6 @@
     margin: 0 auto;
   }
   .main-contact-form-input {
-    width: inherit;
+    width: 93%;
   }
 }
