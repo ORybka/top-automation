@@ -485,6 +485,9 @@ p.second {
   h1 {
     font-size: 3rem;
   }  
+  h3 {
+    font-size: 2.6rem;
+  }  
   .content-container {
     width: 100vw;
   }
