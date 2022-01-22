@@ -134,6 +134,11 @@
   width: 70%;
   height: auto;
 }
+.about-company-popup video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
 .video-btn-close {
   position: absolute;
   top: 3%;

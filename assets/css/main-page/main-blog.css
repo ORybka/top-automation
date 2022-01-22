@@ -109,6 +109,11 @@
     width: 20vw;
     z-index: 0;
   }
+  .blog-title {
+    position: absolute;
+    left: 2.5rem;
+    z-index: 1;
+  }
   .blog-main-bgimage img {
     height: 100%;
     width: 100%;
@@ -119,15 +124,13 @@
     display: none;
   }
   .blogSwiper {
-    height: 25vh;
+    height: 50vh;
+    margin: 13rem 0 0 !important;
   }
   .blog-swiper-nav {
     display: flex;
     justify-content: center;
     margin: 1rem auto 0 !important;
-  }
-  .blog-slide {
-    width: 30vh !important;
   }
   .blog-swiper-nav .swiper-button-next, 
   .blog-swiper-nav .swiper-button-prev {
