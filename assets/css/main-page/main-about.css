@@ -200,9 +200,21 @@
     display: flex;
     flex-direction: column;
   }
+  .about-company-title {
+    margin: 8rem auto 2rem;
+    width: 86%;
+  }
   .line-block {
     margin: 0 0 2rem;
     width: 30%;
+  }
+  .subtitle-about-block {
+    margin-bottom: .7rem;
+  }
+  .line-block::after {
+    top: 8px;
+    left: 0;
+    height: 1.5px;
   }
   .text-about-block,
   .more-info-block {
@@ -215,7 +227,9 @@
     flex-direction: column;
   }
   .text-about-block-mobile p {
-    margin: .5rem 0;
+    margin: .7rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
   }
   .more-info-block-mobile {
     margin: 1.5rem 0 2rem;
@@ -224,7 +238,7 @@
     flex-direction: column-reverse;
   }
   .about-top-title {
-    top: 215px;
+    top: 310px;
     left: 0;
   }
   .video-block {
@@ -240,5 +254,15 @@
   }
   .about-bottom-title {
     left: 8vw;
+  }
+  .statistics-block {
+    grid-gap: 2rem;
+  }
+  .stat-grid-item .stat-num {
+    padding: 1rem 1rem 0;
+  }
+  .stat-grid-item p {
+    font-size: 1rem;
+    padding: 1rem;
   }
 }

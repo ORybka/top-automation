@@ -536,11 +536,11 @@ p.second {
     width: 100vw;
   }
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   html {
     font-size: 12px;
   }
-}
+} */
 
 /**** RESPONSIVE MENU + HEADER ****/
 @media (min-width: 1400px) {
