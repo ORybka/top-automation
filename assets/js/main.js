@@ -11,6 +11,15 @@ document.addEventListener('DOMContentLoaded', function () {
         delay: 5000,
       },
 
+      breakpoints: {
+        0: {
+          direction: 'horizontal',
+        },
+        767: {
+          direction: 'vertical',
+        },
+      },
+
       pagination: {
         el: '.main-swiper-pagination',
         type: 'bullets',
