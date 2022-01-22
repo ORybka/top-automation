@@ -91,8 +91,19 @@
   }
 }
 @media (max-width: 767px) {
+  .our-services-section {
+    margin-bottom: 20rem;
+  }
   .services-container {
     position: relative;
+    background-image: url('/assets/images/services-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 7rem;
+    padding: 1rem;
+    margin-bottom: -4rem;
   }
   .services-title {
     justify-content: center;
@@ -100,15 +111,15 @@
   }
   .services-grid-container {
     display: flex;
+    height: 120%;
     flex-direction: column;
-    margin-top: 0rem;
+    margin-top: -5rem;
+    margin-bottom: -7rem;
     z-index: 10;
-    background-image: url('/assets/images/services-background.png');
-    background-position: center;
-    background-size: cover;
+    background-image: none;
   }
   .services-grid-item {
-    height: 20rem;
+    height: 26rem;
     width: 80%;
     margin: 0 auto;
   }
