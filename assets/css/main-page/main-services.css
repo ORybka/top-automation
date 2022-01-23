@@ -143,16 +143,6 @@
     margin-bottom: 20rem;
   }
   .services-container {
-    /* position: relative;
-    background-image: url('/assets/images/services-background.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    margin-top: 7rem;
-    padding: 1rem;
-    margin-bottom: -4rem; */
-
     position: relative;
     width: 100%;
     margin-top: 7rem;
@@ -192,5 +182,13 @@
   }
   .services-grid-item:hover {
     margin-top: 0;
+  }
+  .services-item-titlE {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  .services-item-description {
+    font-size: .9rem;
+    line-height: 1.4rem;
   }
 }

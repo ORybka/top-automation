@@ -16,23 +16,17 @@
   padding: 0 3rem;
   margin: 0 auto;
 }
-.footer-link-col ul li a,
-.footer-title {
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 2rem;
-  color: var(--black);
-}
-.footer-list-item {
-  font-weight: 500;
-  font-size: 0.8125rem;
-  line-height: 1rem;
-  color: var(--black);
-}
-.footer-list-item a {
+.footer-list li a {
   font-weight: 500;
   font-size: 0.8125rem;
   line-height: 1.5rem;
+  color: var(--black);
+}
+.footer-link-col ul li a,
+.footer-list li.footer-title {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
   color: var(--black);
 }
 .footer-contact-col {
@@ -73,6 +67,15 @@
   }
   .footer-prod-col {
     margin-bottom: 2rem;
+  }
+  .footer-list li a {
+    font-size: 1.1rem;
+    line-height: 2.1rem;
+  }
+  .footer-link-col ul li a,
+  .footer-list li.footer-title {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
   }
   .footer-link-col {
     width: 100%;

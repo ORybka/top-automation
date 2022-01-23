@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
           spaceBetween: 20
         },
         1500: {
-          slidesPerView: 4.5,
+          slidesPerView: 3.5,
           spaceBetween: 30
         }
       }
@@ -118,10 +118,16 @@ document.addEventListener('DOMContentLoaded', function () {
     window.innerWidth > 766 ? icon = menuIcon : icon = menuIconMobile;
     icon.classList.toggle('open');
 
-    if (icon.classList.contains('open')) {
+    if (icon.classList.contains('open') && window.innerWidth > 766) {
       menuText.innerText = 'close';
+      body.classList.add('no-scroll');
+    } else if (icon.classList.contains('open') && window.innerWidth <= 766) {
+      menuText.innerText = 'close';
+      body.classList.add('fixed-position');
     } else {
       menuText.innerText = 'меню';
+      body.classList.remove('no-scroll');
+      body.classList.remove('fixed-position');
     }
 
     if (menu.classList.contains('menu-show')) {
@@ -176,12 +182,30 @@ document.addEventListener('DOMContentLoaded', function () {
   const videoPopup = document.getElementById('about-company-popup');
   const body = document.querySelector('body');
   const videoBtnClose = document.getElementById('video-btn-close');
+  const playButton = document.getElementById('about-video-popup');
+  const video = document.querySelector('.video-popup');
 
   if (videoBtn) {
     videoBtn.addEventListener('click', showVideoPopup);
   }
   if (videoBtnClose) {
     videoBtnClose.addEventListener('click', hideVideoPopup);
+  }
+  if (playButton) {
+    playButton.addEventListener('click', playVideo);
+  }
+  if (video) {
+    video.addEventListener('pause', () => {
+      playButton.classList.add('show');
+      playButton.classList.remove('hide');
+    });
+  }
+  function playVideo() {
+    if (video.paused === true) {
+      video.play();
+      playButton.classList.add('hide');
+      playButton.classList.remove('show');
+    }
   }
   function showVideoPopup() {
     body.classList.add('no-scroll');

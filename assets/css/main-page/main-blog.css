@@ -151,6 +151,12 @@
   background-color: var(--red);
 }
 /**** RESPONSIVE ****/
+@media (min-width: 1400px) {
+  .blogSwiper {
+    height: 28vw;
+    min-height: 400px;
+  }
+}
 @media (max-width: 767px) {
   .blog-main-bgimage {
     left: 0;

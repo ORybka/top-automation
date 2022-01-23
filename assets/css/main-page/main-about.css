@@ -130,14 +130,13 @@
 .about-company-popup.show {
   display: flex;
 }
-.about-company-popup img {
-  width: 70%;
-  height: auto;
-}
 .about-company-popup video {
   width: 100%;
   max-width: 900px;
   height: auto;
+}
+.video-popup-container {
+  position: relative;
 }
 .video-btn-close {
   position: absolute;
@@ -156,6 +155,20 @@
 }
 .video-btn-close img {
   width: 18px;
+}
+.video-popup-btn {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  width: 6rem;
+  z-index: 10;
+  cursor: pointer;
+}
+.video-popup-btn.show {
+  display: block;
+}
+.video-popup-btn.hide {
+  display: none;
 }
 
 /**** RESPONSIVE ****/
@@ -241,6 +254,13 @@
     top: 290px;
     left: 0;
   }
+  .video-btn-close {
+    width: 40px;
+    height: 40px;
+  }
+  .video-btn-close img {
+    width: 15px;
+  }
   .video-block {
     margin-top: 5rem;
   }
@@ -253,7 +273,7 @@
     font-size: 3.5rem;
   }
   .about-bottom-title {
-    left: 8vw;
+    left: -2%;
   }
   .statistics-block {
     grid-gap: 2rem;
@@ -264,5 +284,13 @@
   .stat-grid-item p {
     font-size: 1rem;
     padding: 1rem;
+  }
+  .video-popup-btn {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 5rem;
+    z-index: 10;
+    cursor: pointer;
   }
 }
