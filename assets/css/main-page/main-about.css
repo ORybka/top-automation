@@ -290,3 +290,12 @@
     cursor: pointer;
   }
 }
+@media (max-width: 400px) {
+  .about-top-title,
+  .about-bottom-title {
+    font-size: 3rem;
+  }
+  .about-bottom-title {
+    left: 2%;
+  }
+}

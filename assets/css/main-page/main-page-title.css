@@ -97,3 +97,12 @@
     margin: 1rem !important;
   }
 }
+@media (max-width: 400px) {
+  .top-title,
+  .bottom-title {
+    font-size: 3rem;
+  }
+  .main-btn {
+    font-size: 1rem;
+  }
+}

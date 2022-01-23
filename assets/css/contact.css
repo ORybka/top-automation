@@ -115,6 +115,17 @@
 }
 
 /**** RESPONSIVE ****/
+@media (min-width: 1740px) {
+  .main-contact-form-block {
+    justify-content: flex-end;
+  }
+  .main-contact-form-block {
+    width: 90%;
+  }
+  .main-contact-form-btn-block {
+    width: 85%;
+  }
+}
 @media (max-width: 1100px) {
   .contact-form-title h3 {
     font-size: 1.8rem;

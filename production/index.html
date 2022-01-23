@@ -34,7 +34,12 @@
         <p id="menu-text">меню</p>
       </div>
       <div class="scroll-container">
-        <button>
+        <button id="scroll-btn">
+          <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.93609 0.636039V13.364M6.93609 13.364L12.3455 7.95459M6.93609 13.364L1.52672 7.95459" stroke="white" stroke-opacity="0.8" stroke-width="1.5"/>
+          </svg>
+        </button>
+        <button id="scroll-down-btn">
           <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.93609 0.636039V13.364M6.93609 13.364L12.3455 7.95459M6.93609 13.364L1.52672 7.95459" stroke="white" stroke-opacity="0.8" stroke-width="1.5"/>
           </svg>
@@ -93,60 +98,63 @@
       </div>
     </div>
     <div id="main-menu-block" class="main-menu-block">
-      <div class="main-menu-left">
-        <img src="/assets/images/blog-background.png" alt="menu background">
-        <ul class="menu-left-list">
-          <li class="menu-input-search">
-            <label class="menu-input-label"></label>
-            <input type="search">
-          </li>
-          <li class="menu-link"><a href="/#about">ПРО НАС</a></li>
-          <li class="menu-link"><a href="/#projects">ПРОЕКТИ</a></li>
-          <li class="menu-link"><a href="/#services">ПОСЛУГИ</a></li>
-          <li class="menu-link"><a href="/#blog">БЛОГ</a></li>
-          <li class="menu-link"><a href="/#contact">КОНТАКТИ</a></li>
-        </ul>
-        <div class="languages-block-menu">
-          <div id="lang-one" class="lang menu-link">rus</div>
-          <div class="lang-separator">
-            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="2" cy="2" r="2" fill="#F6101F"/>
-            </svg>
+      <div class="main-menu-block-scrollable">
+        <div class="main-menu-left">
+          <img src="/assets/images/blog-background.png" alt="menu background">
+          <form role="search" method="get" id="searchform" class="menu-input-search" action="" >
+            <label class="screen-reader-text menu-input-label" for="s"></label>
+            <input type="text" value="" name="s" id="s">
+            <!-- <input type="submit" id="searchsubmit" value=""> -->
+          </form>
+          <ul class="menu-left-list">
+            <li class="menu-link"><a href="#about">ПРО НАС</a></li>
+            <li class="menu-link"><a href="#projects">ПРОЕКТИ</a></li>
+            <li class="menu-link"><a href="#services">ПОСЛУГИ</a></li>
+            <li class="menu-link"><a href="#blog">БЛОГ</a></li>
+            <li class="menu-link"><a href="#contact">КОНТАКТИ</a></li>
+          </ul>
+          <div class="languages-block-menu">
+            <div id="lang-one" class="lang menu-link">rus</div>
+            <div class="lang-separator">
+              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2" r="2" fill="#F6101F"/>
+              </svg>
+            </div>
+            <div id="lang-two" class="lang menu-link">eng</div>
           </div>
-          <div id="lang-two" class="lang menu-link">eng</div>
         </div>
-      </div>
-      <div class="main-menu-block-inner">
-        <img class="menu-vector" src="/assets/images/menu-vector.svg" alt="menu vector">
-        <div class="main-menu-middle">
-          <ul class="menu-middle-list">
-            <li class="menu-link page-link"><a href="/production/">ПРОДУКЦІЯ</a></li>
-            <li class="menu-link"><a href="/">Системи автоматичного відбору</a></li>
-            <li class="menu-link"><a href="/">Конвейерні системи</a></li>
-            <li class="menu-link"><a href="/">Системи автоматичної упаковки</a></li>
-            <li class="menu-link"><a href="/">Системи вертикального переміщення</a></li>
-            <li class="menu-link"><a href="/">Системи автоматичного зваження</a></li>
-            <li class="menu-link"><a href="/">Пластикові тари</a></li>
-            <li class="menu-link"><a href="/">Стелажне обладнання</a></li>
-          </ul>
-        </div>
-        <div class="main-menu-right">
-          <ul class="menu-right-list">
-            <li>
-              <p class="menu-right-title">АДРЕСА:</p>
-              <p class="menu-right-info one">м. Київ</p>
-              <p class="menu-right-info one">вул. Рейтарська 18</p>
-            </li>
-            <li>
-              <p class="menu-right-title">ТЕЛЕФОН:</p>
-              <p class="menu-right-info one">вул. Рейтарська 18</p>
-            </li>
-            <li>
-              <p class="menu-right-title">ТЕЛЕФОН:</p>
-              <p class="menu-right-info one">ПН-ПТ з 09:00 - 18:00</p>
-              <p class="menu-right-info one">СБ-ВС Вихідні</p>
-            </li>
-          </ul>
+        <div class="main-menu-block-inner">
+          <img class="menu-vector" src="/assets/images/menu-vector.svg" alt="menu vector">
+          <div class="main-menu-middle">
+            <ul>
+              <li><a href="/production/">ПРОДУКЦІЯ</a></li>
+              <li><a href="/">Системи автоматичного відбору</a></li>
+              <li><a href="/">Конвейерні системи</a></li>
+              <li><a href="/">Системи автоматичної упаковки</a></li>
+              <li><a href="/">Системи вертикального переміщення</a></li>
+              <li><a href="/">Системи автоматичного зваження</a></li>
+              <li><a href="/">Пластикові тари</a></li>
+              <li><a href="/">Стелажне обладнання</a></li>
+            </ul>
+          </div>
+          <div class="main-menu-right">
+            <ul class="menu-right-list">
+              <li>
+                <p class="menu-right-title">АДРЕСА:</p>
+                <p class="menu-right-info one">м. Київ</p>
+                <p class="menu-right-info one">вул. Рейтарська 18</p>
+              </li>
+              <li>
+                <p class="menu-right-title">ТЕЛЕФОН:</p>
+                <p class="menu-right-info one">+380 67 216 97 97</p>
+              </li>
+              <li>
+                <p class="menu-right-title">ГРАФІК РОБОТИ:</p>
+                <p class="menu-right-info one">ПН-ПТ з 09:00 - 18:00</p>
+                <p class="menu-right-info one">СБ-ВС Вихідні</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -172,104 +180,104 @@
     <div class="menu-container"></div>
     <div class="content-container">
       <div class="main-production-container">
-        <div class="main-production-item">
+        <a href="/" class="main-production-item">
           <img src="/assets/images/production-page/production-01.png" alt="production 01">
           <ul class="main-production-list">
             <li><h4>Системи автоматичного відбору</h4></li>
           </ul>
-          <div class="more-catalog-block">
-            <a href="/" class="red-link">
+          <div class="more-btn-block">
+            <div class="red-link">
               <span>ПЕРЕГЛЯНУТИ</span>
               <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 10.5L10 1.5M10 1.5H2.35M10 1.5V9.15" stroke="#F6101F" stroke-width="2"/>
               </svg>
-            </a>
+            </div>
           </div>
-        </div>
-        <div class="main-production-item">
+        </a>
+        <a href="/" class="main-production-item">
           <img src="/assets/images/production-page/production-02.png" alt="production 01">
           <ul class="main-production-list">
             <li><h4>Конвейерні системи</h4></li>
           </ul>
-          <div class="more-catalog-block">
-            <a href="/" class="red-link">
+          <div class="more-btn-block">
+            <div class="red-link">
               <span>ПЕРЕГЛЯНУТИ</span>
               <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 10.5L10 1.5M10 1.5H2.35M10 1.5V9.15" stroke="#F6101F" stroke-width="2"/>
               </svg>
-            </a>
+            </div>
           </div>
-        </div>
-        <div class="main-production-item">
+        </a>
+        <a href="/" class="main-production-item">
           <img src="/assets/images/production-page/production-03.png" alt="production 01">
           <ul class="main-production-list">
             <li><h4>Системи автоматичної упаковки</h4></li>
           </ul>
-          <div class="more-catalog-block">
-            <a href="/" class="red-link">
+          <div class="more-btn-block">
+            <div class="red-link">
               <span>ПЕРЕГЛЯНУТИ</span>
               <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 10.5L10 1.5M10 1.5H2.35M10 1.5V9.15" stroke="#F6101F" stroke-width="2"/>
               </svg>
-            </a>
+            </div>
           </div>
-        </div>
-        <div class="main-production-item">
+        </a>
+        <a href="/" class="main-production-item">
           <img src="/assets/images/production-page/production-04.png" alt="production 01">
           <ul class="main-production-list">
             <li><h4>Системи вертикального переміщення</h4></li>
           </ul>
-          <div class="more-catalog-block">
-            <a href="/" class="red-link">
+          <div class="more-btn-block">
+            <div class="red-link">
               <span>ПЕРЕГЛЯНУТИ</span>
               <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 10.5L10 1.5M10 1.5H2.35M10 1.5V9.15" stroke="#F6101F" stroke-width="2"/>
               </svg>
-            </a>
+            </div>
           </div>
-        </div>
-        <div class="main-production-item">
+        </a>
+        <a href="/" class="main-production-item">
           <img src="/assets/images/production-page/production-05.png" alt="production 01">
           <ul class="main-production-list">
             <li><h4>Системи автоматичного зваження</h4></li>
           </ul>
-          <div class="more-catalog-block">
-            <a href="/" class="red-link">
+          <div class="more-btn-block">
+            <div class="red-link">
               <span>ПЕРЕГЛЯНУТИ</span>
               <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 10.5L10 1.5M10 1.5H2.35M10 1.5V9.15" stroke="#F6101F" stroke-width="2"/>
               </svg>
-            </a>
+            </div>
           </div>
-        </div>
-        <div class="main-production-item">
+        </a>
+        <a href="/" class="main-production-item">
           <img src="/assets/images/production-page/production-06.png" alt="production 01">
           <ul class="main-production-list">
             <li><h4>Пластикові тари</h4></li>
           </ul>
-          <div class="more-catalog-block">
-            <a href="/" class="red-link">
+          <div class="more-btn-block">
+            <div class="red-link">
               <span>ПЕРЕГЛЯНУТИ</span>
               <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 10.5L10 1.5M10 1.5H2.35M10 1.5V9.15" stroke="#F6101F" stroke-width="2"/>
               </svg>
-            </a>
+            </div>
           </div>
-        </div>
-        <div class="main-production-item">
+        </a>
+        <a href="/" class="main-production-item">
           <img src="/assets/images/production-page/production-07.png" alt="production 01">
           <ul class="main-production-list">
             <li><h4>Стелажнe обладнання</h4></li>
           </ul>
-          <div class="more-catalog-block">
-            <a href="/" class="red-link">
+          <div class="more-btn-block">
+            <div class="red-link">
               <span>ПЕРЕГЛЯНУТИ</span>
               <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 10.5L10 1.5M10 1.5H2.35M10 1.5V9.15" stroke="#F6101F" stroke-width="2"/>
               </svg>
-            </a>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -288,7 +296,7 @@
           </div>
         </div>
         <div class="contact-name-container-mobile">
-          <img src="/assets/images/footer-logo.png" alt="logo">
+          <img src="/assets/images/contact-logo.png" alt="logo">
         </div>
         <div class="main-contact-form-container">
           <div class="contact-form-title">
@@ -305,7 +313,7 @@
                 <input class="main-contact-form-input" type="email" name="email" id="email" placeholder="ПОШТА">
               </div>
               <div class="main-contact-form-btn-block">
-                <input class="main-contact-form-btn" type="button" value="ВІДПРАВИТИ">
+                <input type="submit" value="ВІДПРАВИТИ">
                 <img src="/assets/images/red-arrow.svg" alt="red arrow">
               </div>
             </form>
@@ -319,65 +327,65 @@
     <div class="content-container">
       <div class="footer-container">
         <div class="footer-prod-col">
-          <ul>
-            <li>
-              <a class="footer-title" href="#production">ПРОДУКЦІЯ</a>
+          <ul class="footer-list">
+            <li class="footer-title">
+              ПРОДУКЦІЯ
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Системи автоматичного відбору</a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Конвейерні системи</a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Системи автоматичної упаковки</a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Системи вертикального переміщення</a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Системи автоматичного зваження</a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Пластикові тари</a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Стелажне обладнання</a>
             </li>
           </ul>
         </div>
         <div class="footer-services-col">
-          <ul>
-            <li>
-              <a class="footer-title" href="#services">ПОСЛУГИ</a>
+          <ul class="footer-list">
+            <li class="footer-title">
+              ПОСЛУГИ
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Логістичний консалтинг</a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">ІТ аутсорсинг</a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Система «Розумний дім»</a>
             </li>
-            <li class="footer-list-item">
+            <li>
               <a href="/" target="_blank">Обслуговування конвейерних систем</a>
             </li>
           </ul>
         </div>
         <div class="footer-link-col">
           <ul>
-            <li class="footer-link">
-              <a class="footer-title" href="#projects">ПРОЕКТИ</a>
+            <li>
+              <a href="#projects">ПРОЕКТИ</a>
             </li>
-            <li class="footer-link">
-              <a class="footer-title" href="#about">ПРО НАС</a>
+            <li>
+              <a href="#about">ПРО НАС</a>
             </li>
-            <li class="footer-link">
-              <a class="footer-title" href="#blog">БЛОГ</a>
+            <li>
+              <a href="#blog">БЛОГ</a>
             </li>
-            <li class="footer-link">
-              <a class="footer-title" href="#contact">КОНТАКТИ</a>
+            <li>
+              <a href="#contact">КОНТАКТИ</a>
             </li>
           </ul>
         </div>
@@ -392,6 +400,6 @@
   </footer>
 
   <!-- CUSTOM -->
-  <script src="/assets/js/menu.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
