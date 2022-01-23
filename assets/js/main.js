@@ -215,4 +215,29 @@ document.addEventListener('DOMContentLoaded', function () {
     body.classList.remove('no-scroll');
     videoPopup.classList.remove('show');
   }
+
+  // SCROLL
+  const scrollBtn = document.getElementById("scroll-btn");
+  const scrollDownBtn = document.getElementById("scroll-down-btn");
+
+  window.onscroll = () => scrollFunction();
+  scrollBtn.addEventListener('click', topFunction);
+  scrollDownBtn.addEventListener('click', () => {
+    document.getElementById('about').scrollIntoView();
+    scrollBtn.style.display = "none";
+  });
+
+  function topFunction() {
+    document.getElementById('main').scrollIntoView();
+  }
+
+  function scrollFunction() {
+    if (document.body.scrollTop > window.innerHeight - 50 || document.documentElement.scrollTop > window.innerHeight - 50) {
+      scrollBtn.style.display = "block";
+      scrollDownBtn.style.display = "none";
+    } else {
+      scrollDownBtn.style.display = "block";
+      scrollBtn.style.display = "none";
+    }
+  }
 });

@@ -168,6 +168,14 @@ p.second {
   background-color: transparent;
   border: 1px solid var(--white);
   border-radius: 50%;
+  cursor: pointer;
+}
+#scroll-btn {
+  display: none;
+  transform: rotate(180deg);
+}
+#scroll-down-btn {
+  transform: rotate(0);
 }
 .menu-container.main-menu-container-mobile {
   display: none;
@@ -306,6 +314,10 @@ p.second {
   height: 100%;
   object-fit: cover;
   opacity: 0.4;
+  z-index: 0;
+}
+.menu-header-menu-main-container {
+  z-index: 1;
 }
 .menu-left-list {
   display: flex;
@@ -526,7 +538,7 @@ p.second {
 }
 @media (min-width: 1400px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 1200px) {

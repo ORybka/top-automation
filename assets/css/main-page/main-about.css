@@ -65,7 +65,7 @@
 }
 .about-top-title {
   top: 0;
-  left: 2rem;
+  left: 0;
 }
 .about-bottom-title {
   bottom: 0;
@@ -178,10 +178,6 @@
   }
   .about-bottom-title {
     left: 20rem;
-  }
-  .about-video-preview {
-    height: 35rem;
-    width: 35rem;
   }
 }
 @media (min-width: 1800px) {
