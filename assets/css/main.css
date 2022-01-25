@@ -195,7 +195,10 @@ p.second {
   color: var(--white);
 }
 .main-header.dark-font {
-  color: var(--grey);
+  color: var(--black);
+}
+.main-header.dark-font .phone-search-block {
+  color: var(--white);
 }
 .main-header-inner-block {
   width: 100%;
