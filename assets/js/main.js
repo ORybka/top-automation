@@ -240,4 +240,20 @@ document.addEventListener('DOMContentLoaded', function () {
       scrollBtn.style.display = "none";
     }
   }
+
+  // PAGINATION
+  const pagination = document.querySelector('.pagination');
+  const navLinks = document.querySelector('.nav-links');
+  var prevBtn = document.getElementsByClassName('prev');
+  var nextBtn = document.getElementsByClassName('next');
+
+  if (pagination) {
+    if (nextBtn.length === 0) {
+      const nextBtn = '<span class="next-inactive">></span>';
+      navLinks.insertAdjacentHTML('beforeend', nextBtn);
+    } else if (prevBtn.length === 0) {
+      const prevBtn = '<span class="prev-inactive"><</span>';
+      navLinks.insertAdjacentHTML('afterbegin', prevBtn);
+    }
+  }
 });

@@ -12,7 +12,9 @@
   display: flex;
   justify-content: space-between;
   width: 92%;
+  max-width: 1400px;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 .main-services-page-title,
 .main-services-page-subtitle {
@@ -27,11 +29,11 @@
   position: absolute;
   bottom: -15%;
   right: 0;
-  width: 50%;
-  height: 80%;
+  width: 45%;
+  height: fit-content;
   display: flex;
   align-items: flex-start;
-  padding: 2rem 6rem 2rem 2rem;
+  padding: 2rem 6rem 9rem 2rem;
   line-height: 1.6rem;
   background-color: var(--white);
   z-index: 1;
@@ -76,7 +78,7 @@
   margin-bottom: 2rem;
   text-transform: initial;
 }
-.services-page-one-col ..services-page-text-section {
+.services-page-one-col .services-page-text-section {
   position: relative;
 }
 .services-page-one-col .services-text-container {
@@ -144,6 +146,9 @@
 
 /**** RESPONSIVE ****/
 @media (min-width: 1500px) {   
+  .main-services-page-subtitle {
+    padding: 2rem 6rem 10rem 2rem;
+  }
   .services-page-bottom-title {
     bottom: -85px;
     right: -204px;
@@ -163,6 +168,7 @@
   }
   .main-services-page-subtitle {
     padding-bottom: 4rem;
+    height: 95%;
   }
   .main-services-page-title {
     margin-bottom: 1rem;
@@ -190,9 +196,9 @@
 @media (max-width: 767px) {
   .services-page-title-container {
     height: 4vh;
-    min-height: 460px;
+    min-height: 550px;
     margin: 3rem 0 0;
-    padding: 5rem 0 0;
+    padding: 8rem 0 0;
   }
   .services-page-flex-container {
     flex-direction: column;
@@ -202,10 +208,12 @@
   .services-page-flex-container h1 {
     width: 92%;
     margin: 0 auto 2rem;
+    font-size: 2.5rem;
   }
   .main-services-page-subtitle {
     position: relative;
     bottom: 0;
+    height: 100%;
     width: 100%;
     padding: 2rem;
   }
