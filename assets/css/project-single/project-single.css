@@ -1,0 +1,322 @@
+.project-page-title-container {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  max-height: 530px;
+  margin-left: 80px;
+  padding: 11vh 0 2rem;
+  background-color: var(--background);
+}
+.project-page-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 92%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.main-project-page-title {
+  display: flex;
+  align-items: center;
+  color: var(--black);
+}
+.main-project-page-title {
+  width: 85%;
+}
+.main-project-page-subtitle {
+  margin-top: 2rem;
+}
+.project-page-section {
+  position: relative;
+  background-color: transparent;
+}
+.project-page-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45vw;
+  height: 100%;
+  background-color: var(--white);
+  z-index: -1;
+}
+.project-page-container {
+  position: relative;
+  z-index: 2;
+}
+.project-page-description-container {
+  position: relative;
+  display: flex;
+  width: 92%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.project-page-description {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem 2rem 0;
+}
+.project-page-description p {
+  margin-bottom: 1rem;
+}
+.project-page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-page-main-btn {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+}
+.project-page-text-section {
+  padding: 3rem;
+  background-color: var(--background);
+}
+.project-text-container {
+  position: relative;
+  width: 92%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.project-text-container h3 {
+  width: 70%;
+  margin-bottom: 2rem;
+  text-transform: initial;
+}
+.project-page-one-col .project-page-text-section {
+  position: relative;
+}
+.project-page-one-col .project-text-container {
+  width: 75%;
+  max-width: 940px;
+}
+.project-page-one-col .project-text-container h3 {
+  width: 85%;
+}
+.project-page-one-col .project-text-container p {
+  width: 95%;
+  margin: .5rem 0;
+  line-height: 1.7rem;
+}
+.project-page-text-side-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6rem 3rem;
+  background-color: var(--grey);
+  color: var(--white);
+}
+.project-side-container {
+  width: 50%;
+}
+.project-side-container h3 {
+  margin-bottom: 2rem;
+  text-transform: initial;
+}
+.project-page-text-side-section .main-container {
+  margin: 0 auto;
+}
+.project-page-text-side-section p {
+  line-height: 1.7rem;
+}
+.project-side-image-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+}
+.project-side-image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-page-top-title,
+.project-page-bottom-title {
+  position: absolute;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--grey);
+  opacity: .1;
+}
+.project-page-top-title {
+  top: -45px;
+  left: -77px;
+}
+.project-page-bottom-title {
+  bottom: -85px;
+  right: -30px;
+}
+
+/**** RESPONSIVE ****/
+@media (min-width: 1500px) {   
+  .project-page-flex-container {
+    padding-top: 14rem;
+  }
+  .main-project-page-subtitle {
+    padding: 2rem 6rem 10rem .2rem;
+    margin-top: 0;
+  }
+  .project-page-bottom-title {
+    bottom: -85px;
+    right: -204px;
+  }
+  
+}
+@media (max-width: 1200px) {   
+  .project-page-text-section {
+    padding: 3rem 3rem 8rem;
+  }
+}
+@media (max-width: 992px) {
+  .project-page-title-container {
+    /* max-height: 600px; */
+    height: 90vh;
+  }
+  .project-page-flex-container h1 {
+    font-size: 3rem;
+  }
+  .project-page-flex-container {
+    padding-top: 0;
+  }
+  .main-project-page-subtitle {
+    padding-bottom: 6rem;
+    height: 95%;
+  }
+  .main-project-page-title {
+    margin-bottom: 1rem;
+  }
+  .project-page-title {
+    padding-bottom: 1.5rem;
+  }
+  .project-page-container {
+    margin: -10rem auto 4rem;
+  }
+  .project-page-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-page-element {
+    width: 100%;
+    max-width: 550px;
+    margin: 1rem;
+  }
+  .project-page-red-link {
+    padding-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .project-page-title-container {
+    height: 40vh;
+    min-height: 360px;
+    margin: 3rem 0 0;
+    padding: 8rem 0 0;
+  }
+  .project-page-flex-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .project-page-flex-container h1 {
+    width: 92%;
+    margin: 0 auto 2rem;
+    font-size: 2.5rem;
+  }
+  .main-project-page-subtitle {
+    position: relative;
+    bottom: 0;
+    height: 100%;
+    width: 92%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .project-page-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: -2rem auto 2rem;
+  }
+  .project-page-section {
+    background-color: var(--white);
+  }
+  .project-page-section::after {
+    content: none;
+  }
+  .project-page-description-container {
+    flex-direction: column;
+    width: 92%;
+    margin: 0 auto;
+  }
+  .project-page-description {
+    padding: 0rem 5rem 2rem 0;
+  }
+  .project-page-image-block {
+    height: 26vh;
+  }
+  .project-page-main-btn {
+    left: 15%;
+    width: 70%;
+    justify-content: center;
+  }
+  .project-side-container h3,
+  .project-text-container h3 {
+    font-size: 1.714rem;
+    width: 100%;
+    margin: 0;
+  }
+  .project-page-text-section {
+    width: 92%;
+    margin: 2rem auto;
+    padding: 0;
+    background-color: var(--background);
+  }
+  .project-page-text-side-section {
+    width: 100%;
+    padding: 5rem 0 375px;
+  }
+  .project-side-container {
+    width: 100%;
+  }
+  .project-side-text-block p {
+    margin: 2rem 0;
+  }
+  .project-side-image-block {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 350px;
+  }
+  .project-page-top-title,
+  .project-page-bottom-title {
+    font-size: 3.5rem;
+  }
+  .project-page-one-col .project-text-container {
+    width: 92%;
+    max-width: initial;
+  }
+  .project-page-one-col .project-text-container p {
+    width: 100%;
+    margin: 1rem 0 0;
+  }
+  .project-page-one-col .project-text-container h3 {
+    width: 100%;
+  }
+  .project-page-top-title,
+  .project-page-bottom-title {
+    font-size: 3rem;
+  }
+  .project-page-top-title {
+    top: -39px;
+    left: 0;
+  }
+  .project-page-bottom-title {
+    left: 2%;
+    bottom: -48px;
+  }
+}

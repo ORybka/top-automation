@@ -569,13 +569,19 @@ p.second {
   list-style: disc;
   padding-left: 2rem;
 }
+.services-side-text-block h5,
+.text-block-single h5,
+.text-block-left h5,
+.text-block-right h5 {
+  font-size: 1rem; 
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 .services-side-text-block h4,
 .text-block-single h4,
 .text-block-left h4,
 .text-block-right h4 {
-  font-size: 1rem; 
-  font-weight: 700;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 .text-block-list {
   font-size: 1rem;
@@ -897,7 +903,7 @@ p.second {
 @media (max-width: 776px) {
   .breadcrumbs-block {
     width: 100%;
-    top: 11vh;
+    top: 12vh;
     left: 0;
   }
 }
