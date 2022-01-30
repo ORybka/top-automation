@@ -88,6 +88,7 @@
 .project-page-one-col .project-page-text-section {
   position: relative;
 }
+.share-section .project-text-container,
 .project-page-one-col .project-text-container {
   width: 75%;
   max-width: 940px;
@@ -96,7 +97,7 @@
   width: 85%;
 }
 .project-page-one-col .project-text-container p {
-  width: 95%;
+  /* width: 95%; */
   margin: .5rem 0;
   line-height: 1.7rem;
 }
@@ -305,6 +306,25 @@ h3.page-swiper-title {
   background-color: var(--red);
 }
 
+/**** BLOG SINGLE ****/
+.share-text-section {
+  margin-bottom: 3rem;
+}
+.share-text-block {
+  display: flex;
+  align-items: center;
+  width: 92%;
+  padding-top: 2rem;
+  margin: 0 auto;
+  border-top: 1px solid rgba(47, 74, 91, 0.2);
+}
+.share-text-block h5 {
+  margin-right: 0.5rem;
+}
+.share-text-block a {
+  margin: 0 .5rem;
+}
+
 /**** RESPONSIVE ****/
 @media (min-width: 1500px) {   
   .project-page-flex-container {
@@ -333,9 +353,14 @@ h3.page-swiper-title {
     min-width: 1000px;
   } */
 }
+@media (min-width: 1400px) {   
+  .share-text-block {
+    width: auto;
+  }
+}
 @media (max-width: 1200px) {   
   .project-page-text-section {
-    padding: 3rem 3rem 8rem;
+    padding: 3rem 3rem 4rem;
   }
 }
 @media (max-width: 992px) {
@@ -463,6 +488,7 @@ h3.page-swiper-title {
   .project-page-bottom-title {
     font-size: 3.5rem;
   }
+  .share-section .project-text-container,
   .project-page-one-col .project-text-container {
     width: 92%;
     max-width: initial;
@@ -539,17 +565,7 @@ h3.page-swiper-title {
     width: 90%;
     height: auto;
   }
+  .share-text-block {
+    justify-content: space-between;
+  }
 }
-
-
-/* .page-single-swiper-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.projectSingleSwiper {
-  width: 92%;
-  height: 27vw;
-  margin: 5rem 0 0 !important;
-} */

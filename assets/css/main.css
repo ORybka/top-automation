@@ -538,6 +538,10 @@ p.second {
   width: 47%;
   line-height: 1.7rem;
 }
+.text-block-single {
+  display: flex;
+  flex-direction: column;
+}
 .services-side-text-block p,
 .services-side-text-block ul,
 .services-side-text-block ol,
@@ -583,6 +587,14 @@ p.second {
 .text-block-right h4 {
   margin-top: 2rem;
 }
+.services-side-text-block img,
+.text-block-single img,
+.text-block-left img,
+.text-block-right img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
 .text-block-list {
   font-size: 1rem;
   font-weight: 500;
@@ -593,10 +605,6 @@ p.second {
   font-size: 1rem;
   font-weight: 700;
   padding-bottom: .5rem;
-}
-.text-block-single {
-  display: flex;
-  flex-direction: column;
 }
 
 /**** SWIPER ****/
