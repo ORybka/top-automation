@@ -15,6 +15,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  
   <title>TOP AUTOMATION | Логістичний консалтинг</title>
 </head>
 <body>
@@ -258,31 +262,65 @@
 
   <section>
     <div class="menu-container"></div>
-    <div class="project-page-text-side-section content-container">
-      <div class="main-container">
-        <div class="project-side-container">
-          <h3 class="second">Особливості транспортного моделювання</h3>
-          <div class="project-side-text-block">
-              <p>
-                Послуга дозволяє моделювати процеси внутрішньої логістики на різних виробництвах, зрозумілі для широкого кола фахівців і керівників.
-              </p>
-              <ol>
-                <li>Аудит існуючої логістичної моделі у співпраці з транспортним, виробничим і побутовим блоками клієнта.</li>
-                <li>Створення економічно обґрунтованого інжинірингового висновку з рекомендаціями щодо формування оновленої логістичної моделі. Ці рекомендації стосуються контролю руху товарних потоків — від постачання та внутрішньої логістики виробничих майданчиків до зовнішніх відправлень та перевалки в портах.</li>
-              </ol>
-              <p>
-                Переваги транспортного моделювання: вибір оптимального варіанта транспортної моделі промислового підприємства; визначення необхідної кількості маневрових локомотивів та сортувальних пристроїв на підприємствах залізничного транспорту; формування рекомендацій щодо підвищення пропускної спроможності залізничної інфраструктури промислового підприємства; розрахунок та аналіз різних варіантів капітальних вкладень та операційних витрат; зниження ризику неправильних рішень на стадії проектування; прискорення впровадження змін для підприємства; поліпшення фінансових та експлуатаційних показників.
-              </p>
+    <div class="page-swiper-container content-container">
+      <h3 class="page-swiper-title second">Фото та відео</h3>
+      <div class="page-single-swiper-container">
+        <div class="swiper projectSingleSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide project-single-slide">
+              <a class="project-single-link" href='/' target="_blank">
+                <img class="project-single-img" src="/assets/images/project-page/project-swiper.png" alt="project slide">
+              </a>
+            </div>
+            <div class="swiper-slide project-single-slide">
+              <a class="project-single-link project-single-link-video" href='/' target="_blank">
+                <img class="project-single-img" src="/assets/images/project-page/project-swiper.png" alt="project slide">
+                <img class="project-single-video-icon" src="/assets/images/video-icon.png" alt="video icon">
+              </a>
+            </div>
+            <div class="swiper-slide project-single-slide">
+              <a class="project-single-link" href='/' target="_blank">
+                <img class="project-single-img" src="/assets/images/project-page/project-swiper.png" alt="project slide">
+              </a>
+            </div>
+            <div class="swiper-slide project-single-slide">
+              <a class="project-single-link project-single-link-video" href='/' target="_blank">
+                <img class="project-single-img" src="/assets/images/project-page/project-swiper.png" alt="project slide">
+                <img class="project-single-video-icon" src="/assets/images/video-icon.png" alt="video icon">
+              </a>
+            </div>
           </div>
         </div>
-        <div class="project-side-image-block">
-          <img src="/assets/images/services-page/services-side.png" alt="services">
-        </div>
+      </div>
+      <div class="page-single-swiper-nav-container">
+        <div class="page-single-swiper-pagination"></div>
+        <div class="page-single-swiper-scrollbar"></div>
+        <div class="page-single-swiper-nav">
+          <div class="swiper-button-prev page-single-swiper-button-prev"></div>
+          <div class="swiper-button-next page-single-swiper-button-next"></div>
+        </div>  
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="next-step-section">
+    <div class="menu-container"></div>
+    <div class="page-next-step-container content-container">
+      <p class="one">Наступний проект</p>
+      <h3>Встановлення палетного конвеєру на виробництві напоїв</h3>
+      <div class="next-step-link">
+        <a href="/" target="_blank" rel="noopener noreferrer">
+          <div class="next-step-button">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 11L11 1M11 1H2.5M11 1V9.5" stroke="white" stroke-width="2"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="next-step-vector">
+        <img src="/assets/images/project-page/next-step-vector.svg" alt="services">
+      </div>
+    </div>
   </section>
 
   <section id="contact" class="contact-section">
@@ -402,6 +440,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- SWIPER -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
   <!-- CUSTOM -->
   <script src="/assets/js/main.js"></script>

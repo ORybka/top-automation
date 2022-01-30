@@ -608,8 +608,8 @@ p.second {
 .breadcrumbs-block {
   position: absolute;
   top: 11vh;
-  left: 75px;
-  width: calc(100vw - 75px);
+  left: 85px;
+  width: calc(100vw - 160px);
   z-index: 10;
 }
 .breadcrumbs {
@@ -625,6 +625,7 @@ p.second {
   position: relative;
   padding-right: 1.5rem;
   color: #00000050;
+  line-height: 1.5rem;
 }
 #breadcrumbs a:after {
   content: '';

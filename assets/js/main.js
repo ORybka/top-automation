@@ -105,6 +105,58 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // PROJECT_SINGLE_SWIPER
+  if (document.querySelector('.projectSingleSwiper')) {
+    const projectSingleSwiper = new Swiper('.projectSingleSwiper', {
+      initialSlide: 0,
+      navigation: {
+        nextEl: '.page-single-swiper-button-next',
+        prevEl: '.page-single-swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.page-single-swiper-scrollbar',
+        draggable: true,
+      },
+      pagination: {
+        el: '.page-single-swiper-pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+          return ('0' + number).slice(-2);
+        },
+        formatFractionTotal: function (number) {
+          return ('0' + number).slice(-2);
+        },
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' +
+            ' - ' +
+            '<span class="' + totalClass + '"></span>';
+        }
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 30
+        },
+        400: {
+          slidesPerView: 1,
+          spaceBetween: 40
+        },
+        600: {
+          slidesPerView: 2.2,
+          spaceBetween: 20
+        },
+        992: {
+          slidesPerView: 2.2,
+          spaceBetween: 20
+        },
+        1200: {
+          slidesPerView: 2.6,
+          spaceBetween: 40
+        }
+      }
+    });
+  }
+
   // MENU
   const menuBtn = document.getElementById('menu-btn');
   const menuIcon = document.getElementById('menu-container');
