@@ -201,3 +201,8 @@
     width: 93%;
   }
 }
+@media (max-width: 420px) {
+  .contact-email {
+    font-size: .7rem; 
+  }
+}

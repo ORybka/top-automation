@@ -37,12 +37,12 @@
 }
 .blog-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
   flex-wrap: wrap;
   margin: -7rem auto 4rem;
 }
-.blog-element {
+.pagination-element {
   display: flex;
   flex-direction: column;
   width: 31%;
@@ -51,7 +51,7 @@
   background-color: var(--white);
   transition: background-color 1s;
 }
-.blog-text {
+.element-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,20 +78,20 @@
   color: var(--grey);
   margin-bottom: 1rem;
 }
-.blog-element:hover .blog-text {
+.pagination-element:hover .element-text {
   margin-top: -2rem;
   height: calc(100% + 2rem);
   background-color: var(--red);
 }
-/* .blog-element:hover .blog-date {
+/* .pagination-element:hover .blog-date {
   margin-top: 2rem;
 } */
-.blog-element:hover .blog-title,
-.blog-element:hover .blog-date,
-.blog-element:hover .blog-red-link span {
+.pagination-element:hover .blog-title,
+.pagination-element:hover .blog-date,
+.pagination-element:hover .blog-red-link span {
   color: var(--white);
 }
-.blog-element:hover .blog-red-link svg path {
+.pagination-element:hover .blog-red-link svg path {
   stroke: var(--white);
 }
 .blog-red-link {
@@ -136,7 +136,7 @@
     align-items: center;
     margin: -10rem auto 4rem;
   }
-  .blog-element {
+  .pagination-element {
     width: 100%;
     max-width: 550px;
     margin: 1rem auto;

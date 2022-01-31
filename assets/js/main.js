@@ -300,7 +300,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var nextBtn = document.getElementsByClassName('next');
 
   if (pagination) {
-    if (nextBtn.length === 0) {
+    if (navLinks.children.length === 0) {
+      nextBtn.innerHtml = '';
+      prevBtn.innerHtml = '';
+    } else if (nextBtn.length === 0) {
       const nextBtn = '<span class="next-inactive">></span>';
       navLinks.insertAdjacentHTML('beforeend', nextBtn);
     } else if (prevBtn.length === 0) {
