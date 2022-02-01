@@ -326,6 +326,74 @@ h3.page-swiper-title {
   margin: 0 .5rem;
 }
 
+/**** POPUP *****/
+.page-slider-popup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1622e3;
+  z-index: 20;
+}
+.page-slider-popup.show {
+  display: flex;
+}
+.page-slider-popup video {
+  width: 100%;
+  /* max-width: 900px; */
+  height: auto;
+}
+.video-popup-container {
+  position: relative;
+}
+.page-slider-btn-close {
+  position: absolute;
+  top: 3%;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.page-slider-btn-close img {
+  width: 18px;
+}
+.video-popup-btn {
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  width: 6rem;
+  z-index: 10;
+  cursor: pointer;
+}
+.video-popup-btn.show {
+  display: block;
+}
+.video-popup-btn.hide {
+  display: none;
+}
+.slider-video-popup-container {
+  height: 60vh;
+  width: 50vw;
+}
+.slide-popup {
+  height: 100%;
+}
+.project-single-img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
 /**** RESPONSIVE ****/
 @media (min-width: 1500px) {   
   .project-page-flex-container {
@@ -353,6 +421,18 @@ h3.page-swiper-title {
     width: 88vw;
     min-width: 1000px;
   } */
+}
+@media (max-width: 1600px) {   
+  .next-step-vector {
+    height: auto;
+  }
+  .next-step-vector img {
+    width: 100%;
+    height: auto;
+  }
+  .video-popup-btn {
+    width: 4rem;
+  }
 }
 @media (min-width: 1400px) {   
   .share-text-block {
@@ -568,5 +648,26 @@ h3.page-swiper-title {
   }
   .share-text-block {
     justify-content: space-between;
+  }
+  .slider-video-popup-container {
+    height: auto;
+    width: auto;
+  }
+  .project-single-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .video-popup-btn {
+    top: 47%;
+    left: 45%;
+    width: 3rem;
+  }
+  .page-slider-btn-close {
+    width: 40px;
+    height: 40px;
+  }
+  .page-slider-btn-close img {
+    width: 15px;
   }
 }

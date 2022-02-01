@@ -907,6 +907,13 @@ p.second {
     top: 10px;
   }
 }
+/* @media (max-width: 1200px) {
+  .breadcrumbs-block {
+    left: 85px;
+    width: calc(100vw - 120px);
+    padding-right: 35px;
+  }
+} */
 @media (max-width: 992px) {
   .breadcrumbs-block {
     top: 13vh;
