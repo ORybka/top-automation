@@ -619,7 +619,7 @@ p.second {
   position: absolute;
   top: 11vh;
   left: 85px;
-  width: calc(100vw - 85px);
+  width: calc(100vw - 120px);
   z-index: 10;
 }
 .breadcrumbs {
@@ -628,7 +628,7 @@ p.second {
   z-index: 10;
   text-align: left;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1360px;
 }
 #breadcrumbs a,
 #breadcrumbs a:visited {
@@ -917,11 +917,10 @@ p.second {
 @media (max-width: 992px) {
   .breadcrumbs-block {
     top: 13vh;
+    /* width: 85%;
+    left: 0; */
   }
-  .breadcrumbs {
-    width: 85%;
-    max-width: 550px;
-  }
+
 }
 @media (max-width: 766px) {
   .breadcrumbs-block {

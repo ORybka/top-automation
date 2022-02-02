@@ -91,8 +91,6 @@
 @media (max-width: 992px) {
   .projects-flex-container {
     flex-direction: column;
-    width: 85%;
-    max-width: 550px;
   }
   .projects-title-container {
     height: 65vh;
@@ -123,9 +121,18 @@
   .projects-title-container {
     margin-left: 0;
   }
+  .project-title {
+    padding-bottom: 1rem;
+  }
+  .element-text {
+    padding: 1rem 2rem 2rem;
+  }
+  .project-date {
+    margin-top: -0.5rem
+  }
 }
 @media (max-width: 500px) {
   .project-image img {
-    height: 200px;
+    height: 250px;
   }
 }
