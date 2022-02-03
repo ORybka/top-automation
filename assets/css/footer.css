@@ -124,3 +124,8 @@
     padding-top: 3rem;
   }
 }
+@media (max-width: 350px) {
+  .footer-email {
+    font-size: 1rem;
+}
+}

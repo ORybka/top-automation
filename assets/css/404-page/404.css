@@ -1,0 +1,101 @@
+.notfound-page-section {
+  height: 100vh;
+}
+.notfound-page-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.notfound-page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 45%;
+  padding: 0 10%;
+}
+.notfound-page-container p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: var(--grey);
+}
+.notfound-page-container p.notfound-page-title {
+  margin-bottom: 2rem;
+  font-size: 7.5rem;
+  line-height: 9rem;
+  font-weight: 600;
+  color: var(--grey);
+}
+.notfound-page-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 0;
+  margin-top: 1rem;
+}
+.notfound-page-img-container {
+  width: 55%;
+  height: 100%;
+}
+.notfound-page-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.empty-block-top,
+.empty-block-bottom {
+  position: absolute;
+  height: 100px;
+  width: 30%;
+  background-color: var(--white);
+}
+.empty-block-top {
+  top: 0;
+  right: 0;
+}
+.empty-block-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+/**** RESPONSIVE ****/
+@media (min-width: 2000px) {
+  .notfound-page-container {
+    padding: 0 15%;
+  }
+}
+@media (max-width: 767px) {
+  .notfound-page-section {
+    height: auto;
+  }
+  .notfound-page-block {
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--white);
+  }
+  .empty-block-top,
+  .empty-block-bottom {
+    display: none;
+  }
+  .notfound-page-container {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    margin-top: 13rem;
+  }
+  .notfound-page-btn {
+    justify-content: center;
+  }
+  .notfound-page-btn a {
+    width: 100%;
+    justify-content: center;
+  }
+  .notfound-page-img-container {
+    width: 100%;
+    height: 40vh;
+    margin-top: -4rem;
+  }
+}
