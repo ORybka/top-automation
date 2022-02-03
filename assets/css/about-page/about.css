@@ -123,7 +123,7 @@
   padding-top: 1rem;
   font-size: 1rem;
   font-weight: 500;
-  color: #0d1622e3;
+  color: var(--second-black);
 }
 .about-container-mobile {
   display: none;
@@ -136,7 +136,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: #0d1622e3;
+  background-color: var(--second-black);
   z-index: 20;
 }
 .about-company-popup.show {

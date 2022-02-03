@@ -5,6 +5,7 @@
   --red: #f6101f;
   --red-hover: #B80E19;
   --black: #0c1f2c;
+  --second-black: #0D1622;
   --white: #fff;
 }
 
@@ -241,8 +242,10 @@ p.second {
 }
 
 /**** MAIN BUTTON ****/
+.result_item-notfound a.main-btn,
 .main-btn {
   display: flex;
+  flex-direction: row;
   align-items: center;
   height: 4rem;
   width: fit-content;
@@ -256,6 +259,7 @@ p.second {
   outline: none;
   cursor: pointer;
 }
+.result_item-notfound a.main-btn:hover,
 .main-btn:hover {
   background-color: var(--red-hover);
 }
@@ -689,6 +693,115 @@ p.second {
 .next-inactive,
 .prev-inactive {
   opacity: .5;
+}
+
+/**** SEARCH ****/
+.findme {
+  margin-top: 3rem;
+  padding: 6rem 0 7rem;
+  margin-left: 80px;
+}
+.findme p, 
+.findme form {
+  width: 92%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.findme-result {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--second-black);
+}
+.findme-result-highlight {
+  color: var(--red);
+}
+.findme input {
+  width: 100%;
+  margin: 0 0 3rem;
+  font-size: 3.5rem; 
+  font-weight: 600;
+  line-height: 5.625rem;
+  text-transform: capitalize;
+  border: none;
+  border-bottom: 1px solid rgba(47, 74, 91, 0.2);
+  outline: none;
+  background: transparent;
+}
+.findme input:active,
+.findme input:focus {
+  border-bottom: 2px solid var(--second-black);
+}
+.result-search-list,
+.find {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.result_item .more-info-block,
+.find .more-info-block {
+  margin: 2rem 0 0;
+}
+.result_item-notfound .result_item-text,
+.result_item,
+.find li {
+  width: 50%;
+  margin: 2rem 0;
+  padding-right: 8rem;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+}
+.result_item a,
+.find li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: var(--second-black);
+}
+.result_item-notfound .result_item-text {
+  width: 100%;
+  margin: 0;
+}
+.result_item-notfound a.main-btn {
+  margin-top: 2rem;
+}
+
+/**** RESPONSIVE SEARCH ****/
+@media (max-width: 767px) {
+  .findme p, 
+  .findme form {
+    width: 100%;
+  }
+  .findme {
+    padding: 6rem 0 7rem;
+    width: 90%;
+    margin: 3rem auto 0;
+  }
+  .result-search-list,
+  .find {
+    width: 100%;
+    flex-direction: column;
+  }
+  .result_item,
+  .find li {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(47, 74, 91, 0.2);
+  }
+  .result_item:last-child,
+  .find li:last-child {
+    border-bottom: none;
+  }
+  .result_item .more-info-block,
+  .find .more-info-block {
+    padding-bottom: 2rem;
+  }
 }
 
 /**** RESPONSIVE ****/
