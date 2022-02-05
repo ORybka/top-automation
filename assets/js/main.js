@@ -355,8 +355,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // PAGINATION
   const pagination = document.querySelector('.pagination');
   const navLinks = document.querySelector('.nav-links');
-  var prevBtn = document.getElementsByClassName('prev');
-  var nextBtn = document.getElementsByClassName('next');
+  const prevBtn = document.getElementsByClassName('prev');
+  const nextBtn = document.getElementsByClassName('next');
 
   if (pagination) {
     if (navLinks.children.length === 0) {
@@ -369,5 +369,44 @@ document.addEventListener('DOMContentLoaded', function () {
       const prevBtn = '<span class="prev-inactive"><</span>';
       navLinks.insertAdjacentHTML('afterbegin', prevBtn);
     }
+  };
+
+  // HEADER_SEARCH
+  const searchBtn = document.getElementById('header-search-btn');
+  const closeSearchBtn = document.getElementById('close-search-btn');
+  const headerContainer = document.querySelector('.main-header-inner-block');
+  const headerSearchBlock = document.querySelector('.header-search-block');
+  const languagesBlock = document.querySelector('#languages-block');
+  const phoneBlock = document.querySelector('#phone-block');
+
+  if (searchBtn) {
+    searchBtn.addEventListener('click', openSearch);
+  }
+  if (closeSearchBtn) {
+    closeSearchBtn.addEventListener('click', closeSearch);
+  }
+  function openSearch() {
+    headerContainer.classList.add('show');
+    languagesBlock.classList.add('hide');
+    phoneBlock.classList.add('hide');
+    headerSearchBlock.classList.add('active');
+    closeSearchBtn.classList.add('show');
+  }
+  function closeSearch() {
+    headerContainer.classList.remove('show');
+    languagesBlock.classList.remove('hide');
+    phoneBlock.classList.remove('hide');
+    headerSearchBlock.classList.remove('active');
+    closeSearchBtn.classList.remove('show');
   }
 });
+//CATEGORY_PAGE
+const categoryContainer = document.querySelector('.category-container');
+const categoryElement = document.querySelector('.category-element:last-child');
+
+console.log(categoryContainer);
+if (categoryContainer) {
+  if (categoryContainer.children.length % 2 !== 0)
+    categoryElement.classList.add('single-element');
+}
+
