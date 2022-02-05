@@ -671,12 +671,16 @@ p.second {
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.services-side-text-block h4,
-.text-block-single h4,
-.text-block-left h4,
-.text-block-right h4 {
-  margin-top: 2rem;
+.services-side-text-block h3,
+.text-block-single h3,
+.text-block-left h3,
+.text-block-right h3 {
+  font-size: 2.5rem; 
+  line-height: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
+
 .services-side-text-block p img,
 .text-block-single p img,
 .text-block-left p img,
@@ -877,6 +881,15 @@ p.second {
 @media (max-width: 1200px) {
   html {
     font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .services-side-text-block h3,
+  .text-block-single h3,
+  .text-block-left h3,
+  .text-block-right h3 {
+    font-size: 1.7rem; 
+    line-height: 2rem;
   }
 }
 @media (max-width: 767px) {

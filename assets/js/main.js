@@ -404,7 +404,6 @@ document.addEventListener('DOMContentLoaded', function () {
 const categoryContainer = document.querySelector('.category-container');
 const categoryElement = document.querySelector('.category-element:last-child');
 
-console.log(categoryContainer);
 if (categoryContainer) {
   if (categoryContainer.children.length % 2 !== 0)
     categoryElement.classList.add('single-element');
