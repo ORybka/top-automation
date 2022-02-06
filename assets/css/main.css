@@ -734,7 +734,7 @@ p.second {
 #breadcrumbs a:after {
   content: '';
   position: absolute;
-  top: 8px;
+  bottom: 5px;
   right: 5px;
   background-color: var(--red);
   height: 4px;
@@ -981,6 +981,9 @@ p.second {
     margin: 0 2rem;
     border: 1px solid var(--white);
     border-radius: 50%;
+  }
+  .phone-search-block {
+    display: none;
   }
   .main-menu-block {
     height: 100%;

@@ -399,13 +399,15 @@ document.addEventListener('DOMContentLoaded', function () {
     headerSearchBlock.classList.remove('active');
     closeSearchBtn.classList.remove('show');
   }
-});
-//CATEGORY_PAGE
-const categoryContainer = document.querySelector('.category-container');
-const categoryElement = document.querySelector('.category-element:last-child');
 
-if (categoryContainer) {
-  if (categoryContainer.children.length % 2 !== 0)
-    categoryElement.classList.add('single-element');
-}
+  //CATEGORY_PAGE
+  const categoryContainer = document.querySelector('.category-container');
+  const categoryElement = document.querySelector('.category-element:last-child');
+
+  if (categoryContainer) {
+    if (categoryContainer.children.length % 2 !== 0)
+      categoryElement.classList.add('single-element');
+  }
+});
+
 
