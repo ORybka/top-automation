@@ -408,6 +408,20 @@ document.addEventListener('DOMContentLoaded', function () {
     if (categoryContainer.children.length % 2 !== 0)
       categoryElement.classList.add('single-element');
   }
+
+  //PRODUCTION SINGLE PAGE COLOR BLOCK
+  const firstBlock = document.querySelector('.double-block-one');
+  const secondBlock = document.querySelector('.double-block-two');
+  const firstColorBlock = document.querySelector('.double-color-block-one');
+  const secondColorBlock = document.querySelector('.double-color-block-two');
+  if (window.innerHeight > 767) {
+    firstColorBlock.style.height = firstBlock.offsetHeight + 'px';
+    secondColorBlock.style.height = secondBlock.offsetHeight + 'px';
+  } else {
+    firstColorBlock.style.height = firstBlock.offsetHeight + 50 + 'px';
+    secondColorBlock.style.height = secondBlock.offsetHeight + 50 + 'px';
+  }
+
 });
 
 
