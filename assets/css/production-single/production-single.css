@@ -126,8 +126,25 @@
 .grid-one-column .prod-single-grid-container {
   padding-right: 25%;
 }
-.grid-three-blocks .text-block {
-  align-items: center;
+.grid-three-blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, auto);
+}
+.grid-three-blocks .text-block-left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 4rem;
+}
+.grid-three-blocks .text-block-left, 
+.grid-three-blocks .text-block-right {
+  width: 100%;
+  line-height: 1.7rem;
 }
 .prod-single-information-container .dark-block {
   position: relative;
@@ -151,9 +168,17 @@
 .text-block-right.doubled-text-block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 0 0 2rem;
   height: 100%;
+}
+.grid-three-blocks .double-block-one {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.grid-three-blocks .double-block-two {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .doubled-text-block div {
   display: flex;
@@ -270,6 +295,13 @@
 }
 
 /**** RESPONSIVE ****/
+@media (min-width: 768px) {
+  .grid-three-blocks .dark-block-background-half,
+  .grid-three-blocks .red-block-background-half,
+  .grid-three-blocks .white-block-background-half {
+    background-color: transparent;
+  }
+}
 @media (max-width: 767px) {
   .prod-single-flex-container {
     width: 100%;
@@ -411,14 +443,11 @@
     width: 100%;
     background-color: var(--white);
   }
-  .prod-single-grid-container .text-block-right.doubled-text-block, 
-  .prod-single-grid-container .text-block-left.doubled-text-block {
-    margin: 0;
-    padding: 0;
+  .grid-three-blocks {
+    display: grid;
+    grid-template-columns: 100%;
   }
-  .prod-single-grid-container .text-block-right.doubled-text-block.doubled-text-block div, 
-  .prod-single-grid-container .text-block-left.doubled-text-block.doubled-text-block div {
-    margin: 0;
-    padding: 1rem 0;
+  .double-color-block-background {
+    display: none;
   }
 }

@@ -714,7 +714,7 @@ p.second {
   top: 11vh;
   left: 85px;
   width: calc(100vw - 120px);
-  z-index: 1;
+  z-index: 5;
 }
 .breadcrumbs {
   display: block;
