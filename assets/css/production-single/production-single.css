@@ -116,6 +116,10 @@
   padding: 4rem 2rem;
   padding-left: 0;
 }
+.prod-single-grid-container .text-block-left {
+  padding: 4rem 2rem;
+  padding-left: 0;
+}
 .prod-single-grid-container {
   display: flex;
   justify-content: space-between;
@@ -173,12 +177,10 @@
   height: 100%;
 }
 .grid-three-blocks .double-block-one {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 2rem 0 1rem 5rem;
 }
 .grid-three-blocks .double-block-two {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: 1rem 0 2rem 5rem;
 }
 .doubled-text-block div {
   display: flex;
@@ -294,7 +296,123 @@
   right: -100px;
 }
 
+/**** ADVANTAGES SECTION ****/
+.prod-single-advantages-section {
+  background-color: var(--grey);
+}
+.prod-single-information-container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.prod-single-advantages-container {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5rem 0;
+  color: var(--white);
+}
+.prod-advantages-title {
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--white);
+  padding-top: 6rem;
+}
+.prod-single-advantages-container {
+  position: relative;
+  width: 100%;
+  padding: 1rem 10vw 8rem;
+} 
+.advantages-main-image {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 0;
+}
+.advantages-main-image-two {
+  top: -2%;
+}
+.prod-single-advantages-blocks-container {
+  position: relative;
+  width: 75%;
+  max-width: 940px;
+  margin: 0 auto;
+  z-index: 5;
+}
+.prod-single-advantages-blocks-container p {
+  margin-top: 2rem;
+}
+.prod-single-advantages-two-container p {
+  width: 80%;
+}
+.prod-single-advantages-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 130%;
+  margin-left: -10px;
+}
+.advantages-block {
+  position: relative;
+  width: 31%;
+  max-width: 315px;
+  height: 400px;
+  margin: 10px;
+  background-color: var(--light-grey);
+  border-bottom: 2px solid var(--red);
+  padding-top: 1rem;
+}
+.prod-single-advantages-two-blocks {
+  width: 110%;
+  align-items: stretch;
+}
+.prod-single-advantages-two-blocks .advantages-block {
+  width: 47%;
+  max-width: none;
+  height: unset;
+  padding-bottom: 2rem;
+}
+.advantages-block p,
+.advantages-block ul,
+.advantages-block ol {
+  padding: 0 2rem ;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.advantages-block ul,
+.advantages-block ol {
+  padding-left: 4rem;
+}
+.advantages-block img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /**** RESPONSIVE ****/
+
+/**** ADVANTAGES SECTION ****/
+@media (max-width: 1200px) {
+  .prod-single-advantages-blocks {
+    width: 110%;
+  }
+  .advantages-block {
+    position: relative;
+    width: 30%;
+    height: 300px;
+  }
+}
+@media (max-width: 1150px) {
+  .prod-single-advantages-blocks {
+    width: 120%;
+  }
+  .advantages-block {
+    position: relative;
+    width: 45%;
+    height: 300px;
+  }
+}
 @media (min-width: 768px) {
   .grid-three-blocks .dark-block-background-half,
   .grid-three-blocks .red-block-background-half,
@@ -449,5 +567,53 @@
   }
   .double-color-block-background {
     display: none;
+  }
+
+  /**** ADVANTAGES SECTION ****/
+  .prod-advantages-title {
+    padding: 3rem 1rem 0;
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .prod-single-advantages-container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto 4rem;
+  }
+  .prod-single-advantages-blocks-container {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+  }
+  .prod-single-advantages-two-container p {
+    width: 100%;
+  }
+  .prod-single-advantages-blocks {
+    width: 100%;
+    margin-left: 0;
+  }
+  .advantages-block {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    height: 350px;
+    margin: 1rem auto;
+  }
+  .advantages-main-image,
+  .advantages-main-image-two {
+    display: none;
+  }
+  .prod-single-advantages-two-blocks {
+    width: 100%;
+  }
+  .prod-single-advantages-two-blocks .advantages-block {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .prod-single-bottom-title {
+    font-size: 2rem;
+    left: 4%;
   }
 }
