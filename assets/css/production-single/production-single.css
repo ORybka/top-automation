@@ -390,6 +390,99 @@
   height: 100%;
 }
 
+/**** APPOINTMENT ****/
+.prod-appointment-container {
+  display: flex;
+  justify-content: space-between;
+  width: 92%;
+  max-width: 1400px;
+  margin: 1rem auto 6rem;
+}
+.prod-appointment-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, auto);
+}
+.prod-appointment-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-right: 2rem;
+}
+.additional-appointment-block {
+  margin-top: 6rem;
+  padding-right: 3rem;
+}
+.text-block-highlight {
+  font-weight: 700;
+}
+.product-brochure-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  transition: background-color .5s;
+}
+.product-brochure-block {
+  display: flex;
+  align-items: center;
+}
+.product-brochure-block p {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: .825rem;
+  color: var(--white);
+  transition: color .5s;
+}
+.download-block {
+  display: flex;
+  align-items: center;
+}
+.download-block p {
+  margin: 0;
+  padding-right: 1rem;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: color .5s;
+}
+.additional-tag-appointment-block {
+  flex-direction: column;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding-left: 2rem;
+}
+.additional-tag-appointment-block p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff60;
+}
+.additional-tag-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.appointment-tag {
+  width: fit-content;
+  padding: .7rem 1rem;
+  margin: 0 .5rem .5rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border: 1px solid var(--white);
+}
+.product-brochure-container:hover {
+  background-color: var(--white);
+}
+.product-brochure-container:hover .download-block p {
+  color: var(--red);
+}
+.product-brochure-container:hover .product-brochure-block p {
+  color: var(--black);
+}
+
 /**** RESPONSIVE ****/
 
 /**** ADVANTAGES SECTION ****/
@@ -609,6 +702,63 @@
   }
   .prod-single-advantages-two-blocks .advantages-block {
     width: 100%;
+  }
+
+  /**** APPOINTMENT ****/
+  .prod-appointment-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+  .prod-appointment-container {
+    margin: 0 auto;
+  }
+  .prod-appointment-container .text-block-left {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .prod-appointment-description {
+    padding: 0;
+  }
+  .product-brochure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-brochure-block {
+
+  }
+  .product-brochure-block p {
+
+  }
+  .download-block {
+    margin-top: 2rem;
+  }
+  .download-block p {
+    font-weight: 600;
+  }
+  .additional-tag-appointment-block {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+  .additional-tag-appointment-block p {
+    margin-bottom: 1.5rem;
+  }
+  .additional-appointment-block {
+    margin: 3rem 0 5rem;
+    padding-right: 0;
+  }
+  .additional-appointment-block h4 {
+    font-size: 1rem;
+  }
+  .additional-tag-block {
+
+  }
+  .appointment-tag {
+
   }
 }
 @media (max-width: 400px) {
