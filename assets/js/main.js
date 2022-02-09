@@ -269,6 +269,44 @@ document.addEventListener('DOMContentLoaded', function () {
     videoPopup.classList.remove('show');
   }
 
+  // CONTACT FORM POPUP
+  const contactFormBtn = document.querySelectorAll('.open-contact-form-popup');
+  const contactFormPopup = document.getElementById('contact-form-popup');
+  const contactFormClose = document.getElementById('contact-form-btn-close');
+
+  if (contactFormBtn.length !== 0) {
+    contactFormBtn.forEach(el => {
+      el.addEventListener('click', showContactFromPopup);
+    });
+  }
+  if (contactFormClose) {
+    contactFormClose.addEventListener('click', hideContactFromPopup);
+  }
+  function showContactFromPopup() {
+    body.classList.add('no-scroll');
+    contactFormPopup.classList.add('show');
+  }
+  function hideContactFromPopup() {
+    body.classList.remove('no-scroll');
+    contactFormPopup.classList.remove('show');
+  }
+
+  // THANKYOU POPUP
+  const thankyouFormPopup = document.getElementById('thankyou-popup');
+  const thankyouFormClose = document.getElementById('thankyou-btn-close');
+
+  if (thankyouFormClose) {
+    thankyouFormClose.addEventListener('click', hideThankyouFromPopup);
+  }
+  function showThankyouFromPopup() {
+    body.classList.add('no-scroll');
+    thankyouFormPopup.classList.add('show');
+  }
+  function hideThankyouFromPopup() {
+    body.classList.remove('no-scroll');
+    thankyouFormPopup.classList.remove('show');
+  }
+
   //SLIDER_POPUP
   const sliderELArr = document.querySelectorAll('.project-single-slide');
   const sliderPopup = document.getElementById('page-slider-popup');
@@ -414,14 +452,58 @@ document.addEventListener('DOMContentLoaded', function () {
   const secondBlock = document.querySelector('.double-block-two');
   const firstColorBlock = document.querySelector('.double-color-block-one');
   const secondColorBlock = document.querySelector('.double-color-block-two');
-  if (window.innerHeight > 767) {
-    firstColorBlock.style.height = firstBlock.offsetHeight + 'px';
-    secondColorBlock.style.height = secondBlock.offsetHeight + 'px';
-  } else {
-    firstColorBlock.style.height = firstBlock.offsetHeight + 50 + 'px';
-    secondColorBlock.style.height = secondBlock.offsetHeight + 50 + 'px';
+  if (firstColorBlock && secondColorBlock) {
+    if (window.innerHeight > 767) {
+      firstColorBlock.style.height = firstBlock.offsetHeight + 'px';
+      secondColorBlock.style.height = secondBlock.offsetHeight + 'px';
+    } else {
+      firstColorBlock.style.height = firstBlock.offsetHeight + 50 + 'px';
+      secondColorBlock.style.height = secondBlock.offsetHeight + 50 + 'px';
+    }
   }
 
+  //PRODUCTION SINGLE PAGE ADVANTAGES BLOCK
+  const advantagesElemArr = document.querySelectorAll('.advantages-block');
+  let newAdvantagesArr = [];
+  advantagesElemArr.forEach(el => {
+    newAdvantagesArr.push(el.offsetHeight);
+  });
+  const newAdvantagesHeight = Math.max(...newAdvantagesArr);
+  if (window.innerWidth > 768) {
+    advantagesElemArr.forEach(el => {
+      el.style.height = newAdvantagesHeight + 20 + 'px';
+    });
+  } else {
+    advantagesElemArr.forEach(el => {
+      el.style.height = newAdvantagesHeight + 30 + 'px';
+    });
+  }
+
+  //PRODUCTION SINGLE PAGE PROJECTS HOVER
+  const projectElemArr = document.querySelectorAll('.project-element');
+  const elementTextArr = document.querySelectorAll('.project-text');
+  const elementTitleArr = document.querySelectorAll('.project-title');
+  let newArr = [];
+  elementTextArr.forEach(el => {
+    newArr.push(el.offsetHeight);
+  });
+  const newHeight = Math.max(...newArr);
+  if (window.innerWidth > 768) {
+    projectElemArr.forEach(el => {
+      el.style.height = newHeight + 300 + 'px';
+    });
+  } else {
+    projectElemArr.forEach(el => {
+      el.style.height = newHeight + 250 + 'px';
+    });
+  }
+  elementTitleArr.forEach(el => {
+    const newWordsArr = el.innerText.split(' ');
+    if (el.innerText.length > 60 && newWordsArr.length > 7) {
+      const newArr = newWordsArr.slice(0, 7);
+      el.innerText = newArr.join(' ').concat('...');
+    }
+  });
 });
 
 

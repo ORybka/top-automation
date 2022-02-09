@@ -129,6 +129,8 @@
 }
 .grid-one-column .prod-single-grid-container {
   padding-right: 25%;
+  height: 100%;
+  align-items: center;
 }
 .grid-three-blocks {
   display: grid;
@@ -257,7 +259,7 @@
 
 /**** NEXT BLOCK ****/
 .prod-single-one-col-container {
-  padding: 6rem 10vw 8rem;
+  padding: 6rem 10vw 4rem;
   background-color: var(--background);
 }
 .prod-single-description-container {
@@ -321,7 +323,7 @@
 .prod-single-advantages-container {
   position: relative;
   width: 100%;
-  padding: 1rem 10vw 8rem;
+  padding: 1rem 0 8rem;
 } 
 .advantages-main-image {
   position: absolute;
@@ -348,14 +350,13 @@
 .prod-single-advantages-blocks {
   display: flex;
   flex-wrap: wrap;
-  width: 130%;
+  width: 115%;
   margin-left: -10px;
 }
 .advantages-block {
   position: relative;
   width: 31%;
-  max-width: 315px;
-  height: 400px;
+  min-height: 350px;
   margin: 10px;
   background-color: var(--light-grey);
   border-bottom: 2px solid var(--red);
@@ -508,6 +509,28 @@
 .product-brochure-container:hover .product-brochure-block p {
   color: var(--black);
 }
+.projects-title-line {
+  display: none;
+}
+.our-projects-section {
+  padding-bottom: 3rem !important;
+}
+.projects-title {
+  margin: 5rem auto 3rem !important;
+}
+.projects-title h3 {
+  text-transform: none !important;
+  font-size: 2.5rem !important;
+}
+.projects-container {
+  margin: 3rem auto 4rem !important;
+}
+/* .services-page-text-section {
+  padding: 3rem !important;
+} */
+.prod-single-one-col-container {
+  padding: 0 !important;
+}
 
 /**** RESPONSIVE ****/
 
@@ -519,7 +542,7 @@
   .advantages-block {
     position: relative;
     width: 30%;
-    height: 300px;
+    min-height: 300px;
   }
   .advantages-block-image {
     width: 150px;
@@ -533,7 +556,7 @@
   .advantages-block {
     position: relative;
     width: 45%;
-    height: 300px;
+    min-height: 250px;
   }
 }
 @media (max-width: 992px) {
@@ -721,12 +744,19 @@
     width: 100%;
     margin-left: 0;
   }
+  .advantages-block p, .advantages-block ul, .advantages-block ol {
+    font-size: 1rem;
+  }
   .advantages-block {
     position: relative;
     width: 100%;
     max-width: none;
-    height: 350px;
+    /* height: 350px; */
+    height: auto;
     margin: 1rem auto;
+  }
+  .advantages-block img {
+    display: none;
   }
   .advantages-block-with-image {
     width: 100%;

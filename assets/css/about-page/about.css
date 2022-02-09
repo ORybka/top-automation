@@ -136,7 +136,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: var(--second-black);
+  background-color: #0d1622c9;
   z-index: 20;
 }
 .about-company-popup.show {

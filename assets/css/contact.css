@@ -65,6 +65,9 @@
 .wpcf7-not-valid-tip {
   padding-left: 1rem;
 }
+.wpcf7-response-output {
+  display: none;
+}
 .main-contact-form-input {
   width: 85%;
   padding-bottom: 1rem;
@@ -112,6 +115,9 @@
 }
 .contact-name-container-mobile {
   display: none;
+}
+.wpcf7-not-valid {
+  border-bottom: 1px solid var(--red);
 }
 
 /**** RESPONSIVE ****/
