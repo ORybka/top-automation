@@ -368,20 +368,26 @@ document.addEventListener('DOMContentLoaded', function () {
   // SCROLL
   const scrollBtn = document.getElementById("scroll-btn");
   const scrollDownBtn = document.getElementById("scroll-down-btn");
+  const windowHeight = window.innerHeight;
+
+  if (window.scrollY >= windowHeight && (document.body.scrollTop > windowHeight - 50 || document.documentElement.scrollTop > windowHeight - 50)) {
+    scrollBtn.style.display = "block";
+    scrollDownBtn.style.display = "none";
+  }
 
   window.onscroll = () => scrollFunction();
   scrollBtn.addEventListener('click', topFunction);
   scrollDownBtn.addEventListener('click', () => {
-    document.getElementById('about').scrollIntoView();
+    window.scrollTo(0, windowHeight);
     scrollBtn.style.display = "none";
   });
 
   function topFunction() {
-    document.getElementById('main').scrollIntoView();
+    window.scrollTo(0, 0);
   }
 
   function scrollFunction() {
-    if (document.body.scrollTop > window.innerHeight - 50 || document.documentElement.scrollTop > window.innerHeight - 50) {
+    if (window.scrollY >= windowHeight && (document.body.scrollTop > windowHeight - 50 || document.documentElement.scrollTop > windowHeight - 50)) {
       scrollBtn.style.display = "block";
       scrollDownBtn.style.display = "none";
     } else {
